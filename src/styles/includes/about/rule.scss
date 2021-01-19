@@ -1,0 +1,34 @@
+.rule {
+    padding-bottom: 20rem;
+    font-family: $font-georgia;
+    &__img {
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+    }
+    &__title {
+        max-width: 80rem;
+        color: $color-black;
+        font-weight: bold;
+        font-size: 4rem;
+        line-height: 1.35em;
+        margin-bottom: 2rem;
+    }
+    &__text {
+        color: $color-black;
+        font-size: 2rem;
+        line-height: 1.40em;
+        margin-bottom: 4rem;
+    }
+}
+
+.note {
+    &__item {
+        color: $color-black;
+        font-size: 1.6rem;
+        line-height: 1.31em;
+        & span {
+            font-weight: bold;
+        }
+    }
+}

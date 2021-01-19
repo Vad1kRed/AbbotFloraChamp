@@ -1,0 +1,74 @@
+.help {
+    padding: 23.6rem 0 8rem;
+    font-family: $font-georgia;
+    &__title {
+        max-width: 90rem;
+        color: $color-dark-blue;
+        font-weight: bold;
+        font-size: 5rem;
+        line-height: 1.2em;
+        letter-spacing: 0.025em;
+        margin-bottom: 2rem;
+    }
+    &__text {
+        color: $color-black;
+        font-size: 2rem;
+        line-height: 1.15em;
+    }
+}
+
+.destination {
+    padding: 8rem 0;
+    display: flex;
+    justify-content: center;
+    &__item:not(:last-child) {
+        margin-right: 10rem;
+    }
+    &__link {
+        padding: 0.9rem;
+        color: rgba($color: $color-black, $alpha: 0.5);
+        min-width: 20rem;
+        font-family: $font-calibri;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 1.225em;
+        text-align: center;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        border: 2px solid rgba($color: $color-black, $alpha: 0.5);
+        &--active {
+            color: $color-gold;
+            border-color: $color-gold;
+        }
+    }
+}
+
+.desc {
+    &__text {
+        max-width: 89rem;
+        color: $color-dark-blue;
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 1.15em;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+    }
+    &__box {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &__word {
+        color: $color-gold;
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 1.15em;
+        text-transform: uppercase;
+    }
+    &__brand {
+        color: $color-black;
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 1.15em;
+    }
+}

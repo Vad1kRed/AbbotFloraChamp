@@ -1,0 +1,12 @@
+@import './common/reset.scss';
+@import './common/variables.scss';
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1300px;
+}
+
+@import './includes/role/page.scss';
+@import './includes/role/rule.scss';
+@import './includes/role/product.scss';

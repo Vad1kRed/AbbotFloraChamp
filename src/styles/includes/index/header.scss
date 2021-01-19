@@ -1,0 +1,89 @@
+.header {
+    padding: 2rem 0 2.3rem;
+    font-family: $font-calibri;
+    background-color: $color-light-blue;
+    &__top {
+        margin-bottom: 1.5rem;
+    }
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__box {
+        display: flex;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.menu {
+    &__list {
+        display: flex;
+    }
+    &__item:not(:last-child) {
+        margin-right: 3rem;
+    }
+    &__link {
+        color: $color-white;
+        font-size: 2.4rem;
+        line-height: 1.2em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.basket {
+    min-width: 13.5rem;
+    margin-right: 4rem;
+    background-color: $color-white;
+    &__box {
+        cursor: pointer;
+        padding: 1rem 2.1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu {
+        display: none;
+        min-width: 25.4rem;
+        padding: 1rem 2.1rem 2rem;
+        &--active {
+            display: block;
+        }
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+    &__link {
+        color: $color-medium-blue;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 1.225em;
+        text-transform: uppercase;
+    }
+}
+
+.language {
+    align-self: center;
+    
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    &__box {
+        margin-right: 1.5rem;
+        display: flex;
+    }
+    &__flag {
+        margin-right: 0.5rem;
+    }
+    &__text {
+        color: $color-white;
+        font-size: 2.4rem;
+        line-height: 1.2em;
+        text-transform: uppercase;
+    }
+}

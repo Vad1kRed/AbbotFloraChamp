@@ -1,0 +1,22 @@
+.order {
+    padding: 14rem 0;
+    font-family: $font-georgia;
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10.6rem;
+    }
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__link {
+        color: $color-dark-blue;
+        font-weight: bold;
+        font-size: 5rem;
+        line-height: 1.2em;
+        letter-spacing: 0.025em;
+    }
+}

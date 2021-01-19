@@ -1,0 +1,12 @@
+@import './common/reset.scss';
+@import './common/variables.scss';
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1300px;
+}
+
+@import './includes/about/advantage.scss';
+@import './includes/about/page.scss';
+@import './includes/about/rule.scss';

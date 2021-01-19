@@ -1,0 +1,40 @@
+.page {
+    position: relative;
+    padding: 6rem 0 25rem;
+    font-family: $font-calibri;
+    background-color: $color-light-blue;
+    &__box {
+        max-width: 68rem;
+    }
+    &__title {
+        color: $color-medium-blue;
+        font-weight: bold;
+        font-size: 6.1rem;
+        text-transform: uppercase;
+        margin-bottom: 4.3rem;
+    }
+    &__subtitle {
+        margin-bottom: 3rem;
+        color: $color-white;
+        font-weight: bold;
+        font-size: 4.8rem;
+        text-transform: uppercase;
+    }
+    &__btn {
+        padding: 1.5rem 4rem;
+        min-width: 29.4rem;
+        color: rgba($color: $color-white, $alpha: 0.8);
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 1.2em;
+        letter-spacing: 0.025em;
+        text-align: center;
+        text-transform: uppercase;
+        border: 2px solid rgba($color: $color-white, $alpha: 0.8);
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

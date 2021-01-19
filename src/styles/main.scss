@@ -1,0 +1,16 @@
+@import './common/reset.scss';
+@import './common/variables.scss';
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1300px;
+}
+
+@import './includes/index/header.scss';
+@import './includes/index/page.scss';
+@import './includes/index/help.scss';
+@import './includes/index/decision.scss';
+@import './includes/index/product.scss';
+@import './includes/index/order.scss';
+@import './common/footer.scss';

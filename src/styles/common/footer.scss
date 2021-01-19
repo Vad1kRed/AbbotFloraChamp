@@ -1,0 +1,35 @@
+.footer {
+    padding-bottom: 5.6rem;
+    font-family: $font-georgia;
+    &__top {
+        display: flex;
+        margin-bottom: 3.4rem;
+    }
+    &__logo {
+        margin-right: 18.5rem;
+    }
+    &__menu {
+        display: flex;
+    }
+    &__list:not(:last-child) {
+        margin-right: 14.7rem;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 2.5rem;
+    }
+    &__link {
+        font-family: $font-calibri;
+        color: $color-dark-blue;
+        font-size: 2rem;
+        line-height: 1.2em;
+        text-transform: uppercase;
+    }
+    &__info {
+        color: $color-light-black;
+        font-size: 1.1rem;
+        line-height: 1.1em;
+        &:not(:last-child) {
+            margin-bottom: 2.3rem;
+        }
+    }
+}

@@ -1,0 +1,189 @@
+.page {
+    font-family: $font-georgia;
+    &__box {
+        margin: 0 auto;
+        max-width: 58.5rem;
+        padding: 1.3rem 0 5.5rem;
+    }
+    &__title {
+        font-family: $font-calibri;
+        color: $color-dark-blue;
+        font-weight: bold;
+        font-size: 5.5rem;
+        line-height: 1em;
+        text-align: center;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+        & span {
+            color: $color-turquoise;
+        }
+    }
+    &__desc {
+        color: $color-light-black;
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 1.405em;
+        margin-bottom: 3rem;
+    }
+    &__text {
+        color: $color-black;
+        font-size: 1.8rem;
+        line-height: 1.4em;
+        & span {
+            font-weight: bold;
+        }
+    }
+}
+
+.medicine {
+    &__title {
+        color: $color-dark-blue;
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 1.15em;
+        text-align: center;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        & span {
+            color: $color-turquoise;
+        }
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.property {
+    &__item {
+        display: flex;
+        column-gap: 1.5rem;
+        align-items: center;
+        color: $color-black;
+        font-size: 2.8rem;
+        line-height: 1.25em;
+        &:not(:last-child) {
+            margin-bottom: 4rem;
+        }
+        &::before {
+            content: url('../images/icons/dot-green.svg');
+        }
+    }
+}
+
+.purchase {
+    margin: 3rem auto 9rem;
+    display: flex;
+    justify-content: center;
+    &__btn {
+        min-width: 26rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: $color-gold;
+        padding: 1rem 2.5rem 1rem 4rem;
+    }
+    &__text {
+        font-family: $font-calibri;
+        color: $color-white;
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 1.6em;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        margin-right: 2.5rem;
+    }
+    &__img {
+        width: 22px;
+        position: relative;
+        transform: translate(0, 25%);
+    }
+}
+
+.description {
+    margin: 0 auto 15rem;
+    max-width: 109.5rem;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    &__item {
+        padding: 0.5rem 3.5rem;
+        font-family: $font-calibri;
+        color: rgba($color: $color-black, $alpha: 0.5);
+        font-weight: bold;
+        font-size: 2.3rem;
+        line-height: 1.215em;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        border: 1px solid rgba($color: $color-black, $alpha: 0.5);
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+        &--fs-medium {
+            font-size: 1.5rem;
+            line-height: 1.2em;
+        }
+        &--active {
+            color: $color-white;
+            background-color: $color-gold;
+            border-color: $color-gold;
+        }
+    }
+}
+
+.download {
+    &__link {
+        padding: 0.5rem 3.5rem;
+        font-family: $font-calibri;
+        color: rgba($color: $color-black, $alpha: 0.5);
+        font-weight: bold;
+        font-size: 1.3rem;
+        line-height: 1.23em;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        border: 1px solid rgba($color: $color-black, $alpha: 0.5);
+    }
+}
+
+.content {
+    &__text:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+    &__item {
+        display: none;
+        &--active {
+            display: block;
+        }
+    }
+    &__text {
+        color: $color-black;
+        font-size: 1.8rem;
+        line-height: 1.4em;
+        & span {
+            font-weight: bold;
+        }
+    }
+}
+
+.feature {
+    &__item {
+        color: $color-black;
+        font-size: 1.8rem;
+        line-height: 1.4em;
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+}

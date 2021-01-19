@@ -1,0 +1,36 @@
+@import './common/reset.scss';
+@import './common/variables.scss';
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1300px;
+}
+
+.instruction {
+    padding: 7rem 0 20rem;
+    font-family: $font-georgia;
+    &__title {
+        max-width: 64rem;
+        color: $color-dark-blue;
+        font-family: $font-calibri;
+        font-weight: bold;
+        font-size: 5.5rem;
+        line-height: 1em;
+        text-align: center;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        margin: 0 auto 6rem;
+    }
+    &__text {
+        color: $color-black;
+        font-size: 1.8rem;
+        line-height: 1.4em;
+        &--tt-uppercase {
+            text-transform: uppercase;
+        }
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+}

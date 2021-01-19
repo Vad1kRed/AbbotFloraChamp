@@ -1,0 +1,33 @@
+.product {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    &__item {
+        padding: 2rem 2rem 1.5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        &--bg-blue {background-color: $color-light-blue;}
+        &--bg-denim {background-color: $color-denim-blue;}
+        &--bg-turquoise {background-color: $color-turquoise;}
+        &--bg-green {background-color: $color-green;}
+        &--bg-orange {background-color: $color-orange;}
+    }
+    &__logo {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        &-link:not(:last-child) {
+            margin-bottom: 2.4rem;
+        }
+    }
+    &__text {
+        color: $color-white;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 1.33em;
+        letter-spacing: 0.025em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
