@@ -4,6 +4,8 @@
     font-family: $font-calibri;
     background-color: $color-light-blue;
     &__box {
+        position: relative;
+        z-index: 999;
         max-width: 68rem;
     }
     &__title {
@@ -32,9 +34,19 @@
         text-transform: uppercase;
         border: 2px solid rgba($color: $color-white, $alpha: 0.8);
     }
+    
     &__img {
-        position: absolute;
-        top: 0;
-        right: 0;
+        &-lines {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+        &-medicine {
+            position: absolute;
+            right: 0;
+            top: 2rem;  
+            z-index: 2;
+        }
     }
 }

@@ -1,4 +1,31 @@
+.ingredient {
+    padding: 1.5rem 0 9.1rem;
+    &__title {
+        max-width: 54.8rem;
+        margin: 0 auto 10.5rem;
+        font-family: $font-calibri;
+        color: $color-dark-blue;
+        font-weight: bold;
+        font-size: 5.5rem;
+        line-height: 1em;
+        text-align: center;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+    }
+    &-container {
+        max-width: 122.5rem;
+    }
+    &__slide {
+        // max-width: 20.6rem;
+    }
+    &__img {
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+
 .info {
+    display: none;
     font-family: $font-georgia;
     position: absolute;
     top: 0;
@@ -7,8 +34,7 @@
     height: 100%;
     backdrop-filter: blur(15px);
     background-color: rgba($color: $color-black, $alpha: 0.5);
-    &-container {
-        overflow-y: auto;  
+    &-container {  
         margin: 16.5rem auto 0;
         max-width: 103rem;
         min-height: 60.7rem;
