@@ -3,5 +3,10 @@ const basketMenu = document.querySelector('.basket__menu');
 
 basketBox.addEventListener('click', () => {
     basketMenu.classList.toggle('basket__menu--active');
-    basketBox.style.minWidth = basketMenu.offsetWidth + 'px';
+    
+    if (basketMenu.classList.contains('basket__menu--active')) {
+        basketBox.setAttribute('style', 'min-width: ' + basketMenu.offsetWidth + 'px');
+    } else {
+        basketBox.removeAttribute('style');
+    }
 });

@@ -35,17 +35,23 @@
         border: 2px solid rgba($color: $color-white, $alpha: 0.8);
     }
     
-    &__img {
+    &__medicine {
         &-lines {
             position: absolute;
-            right: 0;
-            top: 0;
+            top: 3.5rem;
+            right: -1.2rem;
             z-index: 1;
         }
-        &-medicine {
+        &-elements {
             position: absolute;
+            top: 7.7rem;
+            right: 4.5rem;
+            z-index: 3;
+        }
+        &-box {
+            position: absolute;
+            top: 6.5rem;
             right: 0;
-            top: 2rem;  
             z-index: 2;
         }
     }
