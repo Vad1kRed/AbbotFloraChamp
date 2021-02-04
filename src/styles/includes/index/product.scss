@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     &__item {
+        position: relative;
         padding: 2rem 2rem 1.5rem;
         display: flex;
         align-items: center;
@@ -13,7 +14,21 @@
         &--bg-green {background-color: $color-green;}
         &--bg-orange {background-color: $color-orange;}
     }
+    &__molecules-left {
+        position: absolute;
+        top: 2.4rem;
+        left: 0;
+        z-index: 1;
+    }
+    &__molecules-right {
+        position: absolute;
+        top: 3rem;
+        right: 0;
+        z-index: 1;
+    }
     &__logo {
+        position: relative;
+        z-index: 2;
         margin: auto;
         display: flex;
         flex-direction: column;
