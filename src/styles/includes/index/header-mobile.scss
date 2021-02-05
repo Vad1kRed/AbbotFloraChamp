@@ -22,6 +22,7 @@
         visibility: hidden;
         transform: translate(100%, 0);
         &--active {
+            overflow: auto;
             opacity: 1;
             visibility: visible;
             transform: translate(0, 0);
