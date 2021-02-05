@@ -8,7 +8,6 @@
 }
 
 @import './includes/index/header.scss';
-@import './includes/index/header-mobile.scss';
 @import './includes/index/page.scss';
 @import './includes/index/help.scss';
 @import './includes/index/decision.scss';
@@ -17,8 +16,8 @@
 @import './common/footer.scss';
 
 @media (max-width: 1024px) {
-    main {display: none;}
-    footer {display: none;}
+    // main {display: none;}
+    // footer {display: none;}
 
     .header {
         padding: 1rem 0 1rem;

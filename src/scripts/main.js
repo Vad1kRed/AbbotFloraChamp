@@ -13,12 +13,12 @@ basketBox.addEventListener('click', () => {
 
 const body = document.querySelector('.body');
 const burger = document.querySelector('.burger');
-const headerMobile = document.querySelector('.header-mobile');
-const headerMobileBody = document.querySelector('.header-mobile__body');
+const headerMobile = document.querySelector('.mobile');
+const headerMobileBody = document.querySelector('.mobile__body');
 
 burger.addEventListener('click', () => {
     body.classList.toggle('body--hidden');
     burger.classList.toggle('burger--active');
-    headerMobile.classList.toggle('header-mobile--active');
-    headerMobileBody.classList.toggle('header-mobile__body--active');
+    headerMobile.classList.toggle('mobile--active');
+    headerMobileBody.classList.toggle('mobile__body--active');
 });

@@ -7,15 +7,20 @@
 }
 
 html, body {
+    overflow-x: hidden;
     font-size: 62.5%;
-    min-width: 320px;
-    min-height: 100vh;
     scroll-behavior: smooth;
 }
 
+body {
+    min-width: 320px;
+    min-height: 100vh;
+}
+
 .body {
+    position: relative;
     overflow-x: hidden;
-    &.body--hidden {
+    &--hidden {
         overflow: hidden;
     }
 }
