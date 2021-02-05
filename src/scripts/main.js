@@ -22,3 +22,9 @@ burger.addEventListener('click', () => {
     headerMobile.classList.toggle('header-mobile--active');
     headerMobileBody.classList.toggle('header-mobile__body--active');
 });
+
+headerMobile.addEventListener('click', () => {
+    body.classList.toggle('body--hidden');
+    burger.classList.toggle('burger--active');
+    headerMobileBody.classList.toggle('header-mobile__body--active');
+});

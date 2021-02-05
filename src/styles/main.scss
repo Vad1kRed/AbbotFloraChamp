@@ -1,13 +1,6 @@
 @import './common/reset.scss';
 @import './common/variables.scss';
 
-.body {
-    overflow-x: hidden;
-    &--hidden {
-        overflow: hidden;
-    }
-}
-
 .container {
     margin: 0 auto;
     padding: 0 10px;
@@ -24,7 +17,7 @@
 @import './common/footer.scss';
 
 @media (max-width: 1024px) {
-    // main {display: none;}
+    main {display: none;}
     footer {display: none;}
 
     .header {
