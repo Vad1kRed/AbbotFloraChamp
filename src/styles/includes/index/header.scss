@@ -2,6 +2,10 @@
     padding: 2rem 0 2.3rem;
     font-family: $font-calibri;
     background-color: $color-light-blue;
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
     &__top {
         margin-bottom: 1.5rem;
     }
@@ -12,6 +16,7 @@
     }
     &__box {
         display: flex;
+        align-items: center;
     }
 }
 
@@ -74,16 +79,16 @@
 }
 
 .language {
-    align-self: center;
-    
     cursor: pointer;
     display: flex;
     align-items: center;
     &__box {
         margin-right: 1.5rem;
         display: flex;
+        align-items: center;
     }
     &__flag {
+        width: 1.95rem;
         margin-right: 0.5rem;
     }
     &__text {
@@ -91,5 +96,55 @@
         font-size: 2.4rem;
         line-height: 1.2em;
         text-transform: uppercase;
+    }
+    &__arrow {
+        width: 1.1rem;
+    }
+}
+
+.burger {
+    display: none;
+    width: 1.8rem;
+    height: 0.7rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
+    &__line {
+        display: block;
+        width: 100%;
+        height: 0.1rem;
+        position: absolute;
+        left: 0;
+        border-radius: 2.2rem;
+        transition: 0.2s;
+        background-color: $color-white;
+    }
+    &__line.burger--first {
+        top: 0;
+    }
+    &__line.burger__line--second,
+    &__line.burger__line--third {
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        visibility: hidden;
+    }
+    &__line.burger__line--fourth {
+        bottom: 0;
+    }
+    &--active .burger__line--first,
+    &--active .burger__line--fourth {
+        opacity: 0;
+        visibility: hidden;
+    }
+    &--active .burger__line--second {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(-50%) rotate(45deg);
+    }
+    &--active .burger__line--third {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(-50%) rotate(-45deg);
     }
 }

@@ -1,6 +1,13 @@
 @import './common/reset.scss';
 @import './common/variables.scss';
 
+.body {
+    overflow-x: hidden;
+    &--hidden {
+        overflow: hidden;
+    }
+}
+
 .container {
     margin: 0 auto;
     padding: 0 10px;
@@ -8,9 +15,58 @@
 }
 
 @import './includes/index/header.scss';
+@import './includes/index/header-mobile.scss';
 @import './includes/index/page.scss';
 @import './includes/index/help.scss';
 @import './includes/index/decision.scss';
 @import './includes/index/product.scss';
 @import './includes/index/order.scss';
 @import './common/footer.scss';
+
+@media (max-width: 1024px) {
+    // main {display: none;}
+    footer {display: none;}
+
+    .header {
+        padding: 1rem 0 1rem;
+        &__body {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__top {
+            margin-bottom: 0;
+        }
+    }
+
+    .logo {
+        flex-direction: row-reverse;
+        &__link:not(:last-child) {
+            margin-left: 1.2rem;
+        }
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .basket {
+        display: none;
+    }
+
+    .language {
+        &__flag {
+            width: 1.8rem;
+        }
+        &__text {
+            font-size: 1.2rem;
+        }
+        &__arrow {
+            display: none;
+        }
+    }
+
+    .burger {
+        display: block;
+    }
+}
