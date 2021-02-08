@@ -47,6 +47,10 @@
     }
 
     .language {
+        margin-right: 1.5rem;
+        &__box {
+            margin-right: 0;
+        }
         &__flag {
             width: 1.8rem;
         }
@@ -59,6 +63,10 @@
     }
 
     .burger {
+        display: block;
+    }
+
+    .mobile {
         display: block;
     }
 }

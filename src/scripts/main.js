@@ -11,14 +11,18 @@ basketBox.addEventListener('click', () => {
     }
 });
 
-const body = document.querySelector('.body');
+const html = document.querySelector('html');
+
 const burger = document.querySelector('.burger');
-const headerMobile = document.querySelector('.mobile');
-const headerMobileBody = document.querySelector('.mobile__body');
+const mobile = document.querySelector('.mobile');
+const mobileBox = document.querySelector('.mobile__box');
+const mobileBody = document.querySelector('.mobile__body');
 
 burger.addEventListener('click', () => {
-    body.classList.toggle('body--hidden');
+    html.classList.contains('hidden') ? html.removeAttribute('class') : html.classList.add('hidden');
+
     burger.classList.toggle('burger--active');
-    headerMobile.classList.toggle('mobile--active');
-    headerMobileBody.classList.toggle('mobile__body--active');
+    mobile.classList.toggle('mobile--active');
+    mobileBox.classList.toggle('mobile__box--active');
+    mobileBody.classList.toggle('mobile__body--active');
 });
