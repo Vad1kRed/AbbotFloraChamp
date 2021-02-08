@@ -155,16 +155,23 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -15;
+    z-index: 15;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(100%, 0);
+    backdrop-filter: blur(15px);
+    background-color: rgba($color: $color-black, $alpha: 0.5);
     &--active {
-        z-index: 15;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, 0);
     }
     &__box {
         display: flex;
         justify-content: flex-end;
         width: 100%;
         font-family: $font-calibri;
-        background-color: rgba($color: $color-black, $alpha: 0.5);
     }
     &__body {
         width: 100%;
@@ -172,48 +179,8 @@
         max-width: 26.2rem;
         min-height: 100vh;
         background-color: $color-light-blue;
-        transition: 0.4s;
-        opacity: 0;
-        visibility: hidden;
-        transform: translate(100%, 0);
-        &--active {
-            opacity: 1;
-            visibility: visible;
-            transform: translate(0, 0);
-        }
     }
 }
-
-// .mobile {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     z-index: 15;
-//     display: flex;
-//     justify-content: flex-end;
-//     width: 100%;
-//     font-family: $font-calibri;
-//     &--active {
-//         background-color: rgba($color: $color-black, $alpha: 0.5);
-//     }
-//     &__body {
-//         width: 100%;
-//         flex-shrink: 0;
-//         max-width: 26.2rem;
-//         min-height: 100vh;
-//         background-color: $color-light-blue;
-//         transition: 0.4s;
-//         opacity: 0;
-//         visibility: hidden;
-//         transform: translate(100%, 0);
-//         &--active {
-//             overflow: auto;
-//             opacity: 1;
-//             visibility: visible;
-//             transform: translate(0, 0);
-//         }
-//     }
-// }
 
 .menu-mobile {
     padding: 5.6rem 2rem 3rem;
