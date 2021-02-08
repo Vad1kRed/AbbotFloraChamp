@@ -14,13 +14,19 @@
         &--bg-green {background-color: $color-green;}
         &--bg-orange {background-color: $color-orange;}
     }
-    &__molecules-left {
+    &__molecules-first {
         position: absolute;
         top: 2.4rem;
         left: 0;
         z-index: 1;
     }
-    &__molecules-right {
+    &__molecules-second {
+        position: absolute;
+        left: 0;
+        bottom: -3.4rem;
+        z-index: 1;
+    }
+    &__molecules-third {
         position: absolute;
         top: 3rem;
         right: 0;
