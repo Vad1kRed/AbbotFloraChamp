@@ -150,6 +150,7 @@
 }
 
 .blur {
+    display: none;
     position: absolute;
     transition: 0.4s;
     opacity: 0;
@@ -177,8 +178,6 @@
     opacity: 0;
     visibility: hidden;
     transform: translate(100%, 0);
-    // backdrop-filter: blur(15px);
-    // background-color: rgba($color: $color-black, $alpha: 0.5);
     &--active {
         opacity: 1;
         visibility: visible;
