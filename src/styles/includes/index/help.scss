@@ -43,7 +43,30 @@
     }
 }
 
+.result {
+    display: none;
+    text-align: center;
+    &__btn {
+        font-family: $font-calibri;
+        font-weight: bold;
+        cursor: pointer;
+        min-width: 23.2rem;
+        color: $color-white;
+        font-size: 1.6rem;
+        line-height: 1.375em;
+        letter-spacing: 0.025em;
+        background-color: $color-gold;
+        border: none;
+        outline: none;
+        padding: 0.8rem 2rem;
+        text-transform: uppercase;
+    }
+}
+
 .desc {
+    &--active {
+        display: block;
+    }
     &__text {
         max-width: 89rem;
         color: $color-dark-blue;

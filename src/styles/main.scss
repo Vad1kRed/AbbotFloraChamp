@@ -106,10 +106,21 @@
         &__item:not(:last-child) {
             margin: 0 0 2rem 0;
         }
+        &__link {
+            font-size: 1rem;
+            min-width: 18rem;
+            padding: 0.790rem;
+            line-height: 1.220em;
+        }
     }
+
+    .result {display: block;}
 
     .desc {
         display: none;
+        &--active {
+            display: block;
+        }
     }
 
     .decision {

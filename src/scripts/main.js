@@ -29,3 +29,10 @@ burger.addEventListener('click', () => {
     mobileBox.classList.toggle('mobile__box--active');
     mobileBody.classList.toggle('mobile__body--active');
 });
+
+const resultBtn = document.querySelector('.result__btn');
+const desc = document.querySelector('.desc');
+
+resultBtn.addEventListener('click', () => {
+    desc.classList.toggle('desc--active');
+});
