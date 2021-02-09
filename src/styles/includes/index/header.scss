@@ -152,6 +152,7 @@
 .blur {
     display: none;
     position: absolute;
+    z-index: 14;
     transition: 0.4s;
     opacity: 0;
     visibility: hidden;
