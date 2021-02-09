@@ -12,8 +12,6 @@ basketBox.addEventListener('click', () => {
 });
 
 const html = document.querySelector('html');
-const body = document.querySelector('body');
-
 const burger = document.querySelector('.burger');
 const blur = document.querySelector('.blur');
 const mobile = document.querySelector('.mobile');

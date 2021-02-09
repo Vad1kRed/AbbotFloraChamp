@@ -10,3 +10,114 @@
 @import './includes/about/advantage.scss';
 @import './includes/about/page.scss';
 @import './includes/about/rule.scss';
+
+@media (max-width: 1024px) {
+    .advantage {
+        padding: 3.6rem 0 5.6rem;
+        &__title {
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+        }
+        &__text {
+            max-width: 17.3rem;
+            font-size: 1.4rem;
+            margin: 0 auto 3rem;
+        }
+    }
+
+    .fact {
+        grid-template-columns: 1fr;
+        &__item {
+            min-height: auto;
+        }
+        &__info {
+            padding: 1.5rem;
+        }        
+        &__title {
+            font-size: 1.4rem;
+            margin-bottom: 1.1rem;
+        }
+        &__lead {
+            font-size: 1.2rem;
+        }
+    }
+
+    .page {
+        padding: 6rem 0 12rem;
+        &__title {
+            max-width: 22.4rem;
+            margin: 0 auto 2rem;
+            font-size: 1.8rem;
+        }
+        &__text {
+            font-size: 1.4rem;
+        }
+    }
+
+    .property {
+        margin: 3rem auto 6rem;
+        flex-direction: column;
+        &__item {
+            align-items: center;
+        }
+        &__item:not(:last-child) {
+            margin: 0 0 3rem 0;
+        }
+    }
+
+    .ingredient {
+        &__title {
+            max-width: 24.1rem;
+            font-size: 1.6rem;
+            margin: 0 auto 6rem;
+        }
+        &__item {
+            flex-direction: column;
+            &:not(:last-child) {
+                margin-bottom: 5.3rem;
+            }
+        }
+        &__img {
+            margin-bottom: 3rem;
+        }
+        &__info {
+            &-title {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+            &-desc {
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+            }
+            &-text {
+                font-size: 1.2rem;
+            }
+            &-link {
+                font-size: 1.2rem;
+            }
+        }
+    } 
+
+    .rule {
+        padding-bottom: 6rem;
+        &__img {
+            margin: 0 auto 3rem;
+        }
+        &__title {
+            font-size: 2.4rem;
+        }
+        &__text {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .note {
+        &__item {
+            font-size: 1.2rem;
+            & span {
+                font-weight: bold;
+            }
+        }
+    }
+}
