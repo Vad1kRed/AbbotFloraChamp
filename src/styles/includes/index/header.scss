@@ -149,6 +149,23 @@
     }
 }
 
+.blur {
+    position: absolute;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    background-color: rgba($color: $color-black, $alpha: 0.5);
+    &--active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
 .mobile {
     display: none;
     width: 100%;
@@ -160,8 +177,8 @@
     opacity: 0;
     visibility: hidden;
     transform: translate(100%, 0);
-    backdrop-filter: blur(15px);
-    background-color: rgba($color: $color-black, $alpha: 0.5);
+    // backdrop-filter: blur(15px);
+    // background-color: rgba($color: $color-black, $alpha: 0.5);
     &--active {
         opacity: 1;
         visibility: visible;
