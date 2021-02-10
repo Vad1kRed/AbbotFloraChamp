@@ -8,4 +8,70 @@
 }
 
 @import './includes/gastrostres-relIf/page.scss';
+@import './includes/gastrostres-relIf/info.scss';
 @import './includes/gastrostres-relIf/product.scss';
+
+@media (max-width: 1024px) {
+    .page {
+        &__bg {
+            background-image: url('../images/gastrostres-relIf/bacteria-mobile.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &__box {
+            max-width: 30rem;
+            margin: 0 auto 3rem;
+        }
+        &__title {
+            position: relative;
+            padding: 3rem 0 2rem;
+            font-size: 2.4rem;
+            text-align: center;
+            margin: 0;
+            max-width: 21.6rem;
+            margin: 0 auto;
+        }
+        &__desc {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+        &__text {
+            font-size: 1.1rem;
+        }
+    }
+
+    .box {
+        &__bacteria {display: none;}
+        &__img {
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            margin: 0 auto;
+        }
+    }
+
+    .medicine {
+        max-width: 30rem;
+        margin: 0 auto;
+        &__box {
+            flex-direction: column;
+        }
+        &__title {
+            font-size: 1.6rem;
+        }
+    }
+
+    .property {
+        &__item {
+            font-size: 1.1rem;
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+            &::before {
+                margin-right: 1rem;
+            }
+        }
+    }
+}

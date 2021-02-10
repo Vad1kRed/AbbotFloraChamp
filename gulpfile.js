@@ -28,7 +28,7 @@ const browserReload = () => {
 const html = () => {
     return gulp.src(srcFolder + 'pages/*.html')
         .pipe(include({prefix: '@@'}))
-        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(htmlmin({collapseWhitespace: true, conservativeCollapse: true}))
         .pipe(gulp.dest(distFolder))
         .pipe(browserSync.stream())
 }

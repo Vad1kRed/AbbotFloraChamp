@@ -1,11 +1,16 @@
 .page {
     font-family: $font-georgia;
     &__box {
-        margin: 0 auto;
+        position: relative;
+        z-index: 5;
+        margin: 0 auto 5.5rem;
         max-width: 58.5rem;
-        padding: 1.3rem 0 5.5rem;
     }
     &__title {
+        max-width: 58.5rem;
+        margin: 0 auto 3rem;
+        position: relative;
+        z-index: 5;
         font-family: $font-calibri;
         color: $color-dark-blue;
         font-weight: bold;
@@ -14,7 +19,6 @@
         text-align: center;
         letter-spacing: 0.025em;
         text-transform: uppercase;
-        margin-bottom: 3rem;
         & span {
             color: $color-turquoise;
         }
@@ -36,8 +40,25 @@
     }
 }
 
+.box {
+    &__bacteria {
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        z-index: 1;
+    }
+    &__img {
+        position: absolute;
+        top: 2rem;
+        right: 4rem;
+        z-index: 1;
+    }
+}
+
 .medicine {
     &__title {
+        max-width: 87rem;
+        margin: 0 auto 1rem;
         color: $color-dark-blue;
         font-weight: bold;
         font-size: 3rem;
@@ -45,12 +66,12 @@
         text-align: center;
         letter-spacing: 0.025em;
         text-transform: uppercase;
-        margin-bottom: 1rem;
         & span {
             color: $color-turquoise;
         }
     }
     &__box {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -58,9 +79,12 @@
 }
 
 .property {
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
     &__item {
+        max-width: 345px;
         display: flex;
-        column-gap: 1.5rem;
         align-items: center;
         color: $color-black;
         font-size: 2.8rem;
@@ -70,6 +94,7 @@
         }
         &::before {
             content: url('../images/icons/dot-green.svg');
+            margin-right: 1.5rem;
         }
     }
 }
@@ -142,6 +167,7 @@
 
 .download {
     &__link {
+        height: 100%;
         padding: 0.5rem 3.5rem;
         font-family: $font-calibri;
         color: rgba($color: $color-black, $alpha: 0.5);
