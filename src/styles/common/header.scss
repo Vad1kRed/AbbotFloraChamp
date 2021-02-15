@@ -1,16 +1,13 @@
 .header {
+    padding: 2rem 0 2.3rem;
     font-family: $font-calibri;
-    padding: 20px 0 23px;
     background-color: $color-white;
     &__body {
         display: flex;
-        row-gap: 1.5rem;
         flex-direction: column;
     }
-    &__logo {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
+    &__top {
+        margin-bottom: 1.5rem;
     }
     &__bottom {
         display: flex;
@@ -19,15 +16,22 @@
     }
     &__box {
         display: flex;
-        column-gap: 3.3rem;
         align-items: center;
     }
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .menu {
     &__list {
         display: flex;
-        column-gap: 3rem;
+    }
+    &__item:not(:last-child) {
+        margin-right: 3rem;
     }
     &__link {
         color: $color-black;
@@ -42,28 +46,38 @@
 }
 
 .basket {
-    padding: 0.8rem 2.1rem;
-    background-color: $color-light-blue;
+    position: relative;
+    min-width: 13.5rem;
+    margin-right: 4rem;
+    &:hover,
+    &:hover > &__menu {
+        opacity: 1;
+        visibility: visible;
+        min-width: 25.4rem;
+    }
     &__box {
+        cursor: pointer;
+        padding: 0.7rem 2.1rem;
         display: flex;
-        column-gap: 4.6rem;
-        align-items: center;
         justify-content: space-between;
+        background-color: $color-light-blue;
     }
     &__menu {
-        display: none;
-        &--active {
-            display: block;
-        }
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 4.5rem;
+        right: 0;
+        z-index: 999;
+        min-width: 25.4rem;
+        padding: 1rem 2.1rem 2rem;
+        background-color: $color-light-blue;
     }
-    &__list {
-        padding: 1rem 0;
-        display: flex;
-        row-gap: 1.5rem;
-        flex-direction: column;
+    &__item:not(:last-child) {
+        margin-bottom: 1.5rem;
     }
     &__link {
-        color: $color-medium-blue;
+        color: $color-white;
         font-weight: bold;
         font-size: 1.8rem;
         line-height: 1.225em;
@@ -72,18 +86,168 @@
 }
 
 .language {
+    cursor: pointer;
     display: flex;
-    column-gap: 1.5rem;
     align-items: center;
     &__box {
+        margin-right: 1.5rem;
         display: flex;
-        column-gap: 0.6rem;
         align-items: center;
+    }
+    &__flag {
+        width: 1.95rem;
+        margin-right: 0.5rem;
     }
     &__text {
         color: $color-black;
         font-size: 2.4rem;
         line-height: 1.2em;
         text-transform: uppercase;
+    }
+    &__arrow {
+        width: 1.1rem;
+    }
+}
+
+.burger {
+    display: none;
+    width: 1.8rem;
+    height: 0.7rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
+    &__line {
+        display: block;
+        width: 100%;
+        height: 0.1rem;
+        position: absolute;
+        left: 0;
+        border-radius: 2.2rem;
+        transition: 0.2s;
+        background-color: $color-white;
+    }
+    &__line.burger--first {
+        top: 0;
+    }
+    &__line.burger__line--second,
+    &__line.burger__line--third {
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        visibility: hidden;
+    }
+    &__line.burger__line--fourth {
+        bottom: 0;
+    }
+    &--active .burger__line--first,
+    &--active .burger__line--fourth {
+        opacity: 0;
+        visibility: hidden;
+    }
+    &--active .burger__line--second {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(-50%) rotate(45deg);
+    }
+    &--active .burger__line--third {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(-50%) rotate(-45deg);
+    }
+}
+
+.blur {
+    display: none;
+    position: absolute;
+    z-index: 14;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    background-color: rgba($color: $color-black, $alpha: 0.5);
+    &--active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.mobile {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(100%, 0);
+    &--active {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, 0);
+    }
+    &__box {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        font-family: $font-calibri;
+    }
+    &__body {
+        width: 100%;
+        flex-shrink: 0;
+        max-width: 26.2rem;
+        min-height: 100vh;
+        background-color: $color-light-blue;
+    }
+}
+
+.menu-mobile {
+    padding: 5.6rem 2rem 3rem;
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+    &__link {
+        color: $color-white;
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 1.215em;
+        text-transform: uppercase;
+    }
+}
+
+.basket-mobile {
+    padding: 2.6em 2rem;
+    background-color: $color-white;
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        &::before {
+            content: url('../images/icons/basket-mobile.svg');
+            margin-right: 1rem;
+        }
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 1.6rem;
+    }
+    &__link {
+        flex-shrink: 0;
+        color: $color-medium-blue;
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 1.215em;
+        text-transform: uppercase;   
     }
 }

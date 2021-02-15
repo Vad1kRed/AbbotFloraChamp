@@ -2,24 +2,34 @@
     <div class="container">
         <div class="header__body">
             <div class="header__top">
-                <div class="header__logo">
-                    <img class="header__logo-img" src="./images/logo-flora-champ-black.svg" alt="Logo FloraChamp">
-                    <img class="header__logo-img" src="./images/logo-abbott-color.svg" alt="Logo Abbott">
+                <div class="logo">
+                    <a class="logo__link" href="#">
+                        <picture>
+                            <source srcset="./images/logo-flora-champ-mobile.svg" media="(max-width: 1024px)">
+                            <img class="logo__img" src="./images/logo-flora-champ-black.svg" alt="">
+                        </picture>
+                    </a>
+                    <a class="logo__link" href="#">
+                        <picture>
+                            <source srcset="./images/logo-abbott-color-mobile.svg" media="(max-width: 1024px)">
+                            <img class="header__logo-img" src="./images/logo-abbott-color.svg" alt="">
+                        </picture>
+                    </a>
                 </div>
             </div>
             <div class="header__bottom">
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link menu__link--active" href="#">Про ФлораЧемп</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Продукти</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Про ФлораЧемп</a></li>
+                        <li class="menu__item"><a class="menu__link menu__link--active" href="#">Продукти</a></li>
                         <li class="menu__item"><a class="menu__link" href="#">Роль додаткових інгредієнтів</a></li>
                     </ul>
                 </nav>
                 <div class="header__box">
-                    <div class="header__basket basket">
+                    <div class="basket">
                         <div class="basket__box">
-                            <img class="basket__img" src="./images/icons/basket-white.svg" alt="Basket">
-                            <img class="basket__arrow" src="./images/icons/arrow-down-white.svg" alt="Arrow down">
+                            <img class="basket__img" src="./images/icons/basket-white.svg" alt="">
+                            <img class="basket__arrow" src="./images/icons/arrow-down-white.svg" alt="">
                         </div>
                         <nav class="basket__menu">
                             <ul class="basket__list">
@@ -28,15 +38,44 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="header__language language">
+                    <div class="language">
                         <div class="language__box">
                             <img class="language__flag" src="./images/icons/flag-uk.svg" alt="Flag Ukrainian">
                             <span class="language__text">Ua</span>
                         </div>
                         <img class="language__arrow" src="./images/icons/arrow-down-black.svg" alt="Arrow down">
                     </div>
+                    <div class="burger">
+                        <span class="burger__line burger__line--first"></span>
+                        <span class="burger__line burger__line--second"></span>
+                        <span class="burger__line burger__line--third"></span>
+                        <span class="burger__line burger__line--fourth"></span>
+                    </div>
                 </div>
             </div>
+            
+            <div class="blur">
+                <div class="mobile">
+                    <div class="mobile__box">
+                        <div class="mobile__body">
+                            <nav class="menu-mobile">
+                                <ul class="menu-mobile__list">
+                                    <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Про ФлораЧемп</a></li>
+                                    <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Продукти</a></li>
+                                    <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Роль додаткових інгредієнтів</a></li>
+                                </ul>
+                            </nav>
+                            <nav class="basket-mobile">
+                                <ul class="basket-mobile__list">
+                                    <li class="basket-mobile__item"><a class="basket-mobile__link" href="#">Замовити в аптеці</a></li>
+                                    <li class="basket-mobile__item"><a class="basket-mobile__link" href="#">Купити онлайн</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </header>

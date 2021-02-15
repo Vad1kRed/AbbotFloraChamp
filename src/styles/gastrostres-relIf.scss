@@ -7,9 +7,11 @@
     max-width: 1300px;
 }
 
+@import './common/header.scss';
 @import './includes/gastrostres-relIf/page.scss';
 @import './includes/gastrostres-relIf/info.scss';
 @import './includes/gastrostres-relIf/product.scss';
+@import './common/footer.scss';
 
 @media (max-width: 1024px) {
     .page {

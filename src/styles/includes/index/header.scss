@@ -46,6 +46,12 @@
     position: relative;
     min-width: 13.5rem;
     margin-right: 4rem;
+    &:hover,
+    &:hover > &__menu {
+        opacity: 1;
+        visibility: visible;
+        min-width: 25.4rem;
+    }
     &__box {
         cursor: pointer;
         padding: 0.7rem 2.1rem;
@@ -54,7 +60,8 @@
         background-color: $color-white;
     }
     &__menu {
-        display: none;
+        opacity: 0;
+        visibility: hidden;
         position: absolute;
         top: 4.5rem;
         right: 0;
@@ -62,9 +69,6 @@
         min-width: 25.4rem;
         padding: 1rem 2.1rem 2rem;
         background-color: $color-white;
-        &--active {
-            display: block;
-        }
     }
     &__item:not(:last-child) {
         margin-bottom: 1.5rem;

@@ -1,5 +1,8 @@
 .page {
     font-family: $font-georgia;
+    &__bg {
+        position: relative;
+    }
     &__box {
         position: relative;
         z-index: 5;
@@ -43,13 +46,13 @@
 .box {
     &__bacteria {
         position: absolute;
-        top: 2rem;
+        top: 0;
         left: 0;
         z-index: 1;
     }
     &__img {
         position: absolute;
-        top: 2rem;
+        top: 0;
         right: 4rem;
         z-index: 1;
     }
