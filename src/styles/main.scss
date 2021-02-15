@@ -66,6 +66,7 @@
         &__box {
             display: flex;
             flex-direction: column;
+            align-items: center;
             justify-content: space-between;
             margin: 0 auto;
             max-width: 27.5rem;
@@ -82,7 +83,9 @@
         }
         &__btn {
             min-width: 23.2rem;
+            min-height: 3.8rem;
             font-size: 1.8rem;
+            padding: 0.6rem 2rem;
         }
         &__medicine {
             display: none;

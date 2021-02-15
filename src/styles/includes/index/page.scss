@@ -1,6 +1,6 @@
 .page {
     position: relative;
-    padding: 6rem 0 25rem;
+    padding: 5.7rem 0 25rem;
     font-family: $font-calibri;
     background-color: $color-light-blue;
     &__box {
@@ -11,26 +11,30 @@
     &__title {
         color: $color-medium-blue;
         font-weight: bold;
-        font-size: 6.1rem;
+        font-size: 6rem;
         text-transform: uppercase;
+        line-height: 1;
         margin-bottom: 4.3rem;
     }
     &__subtitle {
-        margin-bottom: 3rem;
         color: $color-white;
         font-weight: bold;
         font-size: 4.8rem;
         text-transform: uppercase;
+        line-height: 1;
+        margin-bottom: 1.3rem;
     }
     &__btn {
-        padding: 1.5rem 4rem;
+        padding: 1.3rem 2rem;
         min-width: 29.4rem;
+        min-height: 6rem;
         color: rgba($color: $color-white, $alpha: 0.8);
         font-weight: bold;
         font-size: 2.4rem;
         line-height: 1.2em;
         letter-spacing: 0.025em;
         text-align: center;
+        vertical-align: center;
         text-transform: uppercase;
         border: 2px solid rgba($color: $color-white, $alpha: 0.8);
     }
@@ -38,20 +42,20 @@
     &__medicine {
         &-lines {
             position: absolute;
-            top: 3.5rem;
-            right: -1.2rem;
+            top: -1.3rem;
+            right: -1.3rem;
             z-index: 1;
         }
         &-elements {
             position: absolute;
-            top: 7.7rem;
+            top: 0.6rem;
             right: 4.5rem;
             z-index: 3;
         }
         &-box {
             position: absolute;
-            top: 6.5rem;
-            right: 0;
+            top: -0.8rem;
+            right: -17rem;
             z-index: 2;
         }
     }
