@@ -18,12 +18,29 @@
         display: flex;
         align-items: center;
     }
+    @include media-1024 {
+        padding: 1rem 0 1rem;
+        &__body {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__top {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .logo {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    @include media-1024 {
+        flex-direction: row-reverse;
+        &__link:not(:last-child) {
+            margin-left: 1.2rem;
+        }
+    }
 }
 
 .menu {
@@ -39,6 +56,9 @@
         line-height: 1.2em;
         font-weight: bold;
         text-transform: uppercase;
+    }
+    @include media-1024 {
+        display: none;
     }
 }
 
@@ -79,6 +99,9 @@
         line-height: 1.225em;
         text-transform: uppercase;
     }
+    @include media-1024 {
+        display: none;
+    }
 }
 
 .language {
@@ -102,6 +125,21 @@
     }
     &__arrow {
         width: 1.1rem;
+    }
+    @include media-1024 {
+        margin-right: 1.5rem;
+        &__box {
+            margin-right: 0;
+        }
+        &__flag {
+            width: 1.8rem;
+        }
+        &__text {
+            font-size: 1.2rem;
+        }
+        &__arrow {
+            display: none;
+        }
     }
 }
 
@@ -150,6 +188,9 @@
         visibility: visible;
         transform: translateY(-50%) rotate(-45deg);
     }
+    @include media-1024 {
+        display: block;
+    }
 }
 
 .blur {
@@ -168,6 +209,9 @@
     &--active {
         opacity: 1;
         visibility: visible;
+    }
+    @include media-1024 {
+        display: block;
     }
 }
 
@@ -199,6 +243,9 @@
         max-width: 26.2rem;
         min-height: 100vh;
         background-color: $color-light-blue;
+    }
+    @include media-1024 {
+        display: block;
     }
 }
 

@@ -17,4 +17,18 @@
         font-size: 2rem;
         line-height: 1.95em;
     }
+    @include media-1024 {
+        padding: 6rem 0;
+        text-align: center;
+        &__title {
+            max-width: 18.1rem;
+            font-size: 1.8rem;
+            margin: 0 auto 3rem;
+        }
+        &__text {
+            margin: 0 auto;
+            max-width: 27.1rem;
+            font-size: 1.2rem;
+        }
+    }
 }

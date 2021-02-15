@@ -32,4 +32,28 @@
             margin-bottom: 2.3rem;
         }
     }
+    @include media-1024 {
+        &__top {
+            flex-direction: column;
+            margin-bottom: 4rem;
+        }
+        &__logo {
+            margin: 0 0 4rem 0;
+        }
+        &__menu {
+            flex-direction: column;
+        }
+        &__list:not(:last-child) {
+            margin: 0 0 2rem 0;
+        }
+        &__item:not(:last-child) {
+            margin: 0 0 2rem 0;
+        }
+        &__link {
+            font-size: 1.4rem;
+        }
+        &__info {
+            font-size: 0.8rem;
+        }
+    }
 }

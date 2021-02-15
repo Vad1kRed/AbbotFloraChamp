@@ -59,4 +59,34 @@
             z-index: 2;
         }
     }
+    @include media-1024 {
+        padding: 1.2rem 0;
+        &__box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 27.5rem;
+            text-align: center;
+        }
+        &__title {
+            font-size: 1.8rem;
+            line-height: 1.1em;
+        }
+        &__subtitle {
+            font-size: 1.8rem;
+            line-height: 1.1em;
+            margin-bottom: 0;
+        }
+        &__btn {
+            min-width: 23.2rem;
+            min-height: 3.8rem;
+            font-size: 1.8rem;
+            padding: 0.6rem 2rem;
+        }
+        &__medicine {
+            display: none;
+        }
+    }
 }

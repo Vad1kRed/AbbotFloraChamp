@@ -1,1 +1,90 @@
-*,*:before,*:after{margin:0;padding:0;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}html,body{position:relative;overflow-x:hidden;font-size:62.5%;scroll-behavior:smooth}body{min-width:320px;min-height:100vh}@media (max-width: 1024px){.hidden{overflow:hidden}}a{display:inline-block;text-decoration:none}img{max-width:100%;display:block}ul,ol{margin:0;padding:0;list-style:none}input,button,textarea,select{font-family:inherit}.container{margin:0 auto;padding:0 10px;max-width:1300px}.instruction{padding:7rem 0 20rem;font-family:"Georgia",sans-serif}.instruction__title{max-width:64rem;color:#2E3E7E;font-family:"Calibri",sans-serif;font-weight:bold;font-size:5.5rem;line-height:1em;text-align:center;letter-spacing:0.025em;text-transform:uppercase;margin:0 auto 6rem}.instruction__text{color:#000;font-size:1.8rem;line-height:1.4em}.instruction__text--tt-uppercase{text-transform:uppercase}.instruction__text:not(:last-child){margin-bottom:2rem}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1300px;
+}
+
+.instruction {
+  padding: 7rem 0 20rem;
+  font-family: "Georgia",sans-serif;
+}
+
+.instruction__title {
+  max-width: 64rem;
+  color: #2E3E7E;
+  font-family: "Calibri",sans-serif;
+  font-weight: bold;
+  font-size: 5.5rem;
+  line-height: 1em;
+  text-align: center;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  margin: 0 auto 6rem;
+}
+
+.instruction__text {
+  color: #000;
+  font-size: 1.8rem;
+  line-height: 1.4em;
+}
+
+.instruction__text--tt-uppercase {
+  text-transform: uppercase;
+}
+
+.instruction__text:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .hidden {
+    overflow: hidden;
+  }
+}

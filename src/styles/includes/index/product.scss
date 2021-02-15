@@ -51,4 +51,17 @@
         text-align: center;
         text-transform: uppercase;
     }
+    @include media-1024 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: minmax(auto, 16rem);
+        &__logo {
+            margin: auto;
+        }
+        &__item:first-child {
+            grid-column: 1 / 3;
+        }
+        &__text {
+            font-size: 1.1rem;
+        }
+    }
 }

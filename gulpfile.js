@@ -6,6 +6,7 @@ const distFolder   = './dist/';
 const gulp         = require('gulp');
 const htmlmin      = require('gulp-htmlmin');
 const scss         = require('gulp-sass');
+const gcmq         = require('gulp-group-css-media-queries');
 const rename       = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
 const babel        = require('gulp-babel');
@@ -36,6 +37,7 @@ const html = () => {
 const styles = () => {
     return gulp.src(srcFolder + 'styles/*.+(css|scss)')
         .pipe(scss({outputStyle: 'compressed'}))
+        .pipe(gcmq())
         .pipe(autoprefixer({overrideBrowserslist: ['last 10 versions'], grid: true}))
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(distFolder + 'styles'))

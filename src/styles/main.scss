@@ -1,5 +1,6 @@
 @import './common/reset.scss';
 @import './common/variables.scss';
+@import './mixins/media.scss';
 
 .container {
     margin: 0 auto;
@@ -15,191 +16,191 @@
 @import './includes/index/order.scss';
 @import './common/footer.scss';
 
-@media (max-width: 1024px) {
-    .header {
-        padding: 1rem 0 1rem;
-        &__body {
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-        }
-        &__top {
-            margin-bottom: 0;
-        }
-    }
+// @media (max-width: 1024px) {
+//     .header {
+//         padding: 1rem 0 1rem;
+//         &__body {
+//             flex-direction: row;
+//             align-items: center;
+//             justify-content: space-between;
+//         }
+//         &__top {
+//             margin-bottom: 0;
+//         }
+//     }
 
-    .logo {
-        flex-direction: row-reverse;
-        &__link:not(:last-child) {
-            margin-left: 1.2rem;
-        }
-    }
+//     .logo {
+//         flex-direction: row-reverse;
+//         &__link:not(:last-child) {
+//             margin-left: 1.2rem;
+//         }
+//     }
 
-    .menu {display: none;}
+//     .menu {display: none;}
 
-    .basket {display: none;}
+//     .basket {display: none;}
 
-    .language {
-        margin-right: 1.5rem;
-        &__box {
-            margin-right: 0;
-        }
-        &__flag {
-            width: 1.8rem;
-        }
-        &__text {
-            font-size: 1.2rem;
-        }
-        &__arrow {
-            display: none;
-        }
-    }
+//     .language {
+//         margin-right: 1.5rem;
+//         &__box {
+//             margin-right: 0;
+//         }
+//         &__flag {
+//             width: 1.8rem;
+//         }
+//         &__text {
+//             font-size: 1.2rem;
+//         }
+//         &__arrow {
+//             display: none;
+//         }
+//     }
 
-    .burger {display: block;}
+//     .burger {display: block;}
 
-    .blur {display: block;}
+//     .blur {display: block;}
 
-    .mobile {display: block;}
+//     .mobile {display: block;}
 
-    .page {
-        padding: 1.2rem 0;
-        &__box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            margin: 0 auto;
-            max-width: 27.5rem;
-            text-align: center;
-        }
-        &__title {
-            font-size: 1.8rem;
-            line-height: 1.1em;
-        }
-        &__subtitle {
-            font-size: 1.8rem;
-            line-height: 1.1em;
-            margin-bottom: 0;
-        }
-        &__btn {
-            min-width: 23.2rem;
-            min-height: 3.8rem;
-            font-size: 1.8rem;
-            padding: 0.6rem 2rem;
-        }
-        &__medicine {
-            display: none;
-        }
-    }
+//     .page {
+//         padding: 1.2rem 0;
+//         &__box {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: space-between;
+//             margin: 0 auto;
+//             max-width: 27.5rem;
+//             text-align: center;
+//         }
+//         &__title {
+//             font-size: 1.8rem;
+//             line-height: 1.1em;
+//         }
+//         &__subtitle {
+//             font-size: 1.8rem;
+//             line-height: 1.1em;
+//             margin-bottom: 0;
+//         }
+//         &__btn {
+//             min-width: 23.2rem;
+//             min-height: 3.8rem;
+//             font-size: 1.8rem;
+//             padding: 0.6rem 2rem;
+//         }
+//         &__medicine {
+//             display: none;
+//         }
+//     }
 
-    .help {
-        padding: 4.5rem 0 6rem;
-        &__title {
-            margin: 0 auto 2rem;
-            max-width: 23.9rem;
-            font-size: 1.8rem;
-            text-align: center;
-        }
-        &__text {
-            margin: 0 auto;
-            max-width: 29.3rem;
-            font-size: 1.4rem;
-            text-align: center;
-        }
-    }
+//     .help {
+//         padding: 4.5rem 0 6rem;
+//         &__title {
+//             margin: 0 auto 2rem;
+//             max-width: 23.9rem;
+//             font-size: 1.8rem;
+//             text-align: center;
+//         }
+//         &__text {
+//             margin: 0 auto;
+//             max-width: 29.3rem;
+//             font-size: 1.4rem;
+//             text-align: center;
+//         }
+//     }
 
-    .destination {
-        padding: 4rem 0;
-        flex-direction: column;
-        align-items: center;
-        &__item:not(:last-child) {
-            margin: 0 0 2rem 0;
-        }
-        &__link {
-            font-size: 1rem;
-            min-width: 18rem;
-            padding: 0.790rem;
-            line-height: 1.220em;
-        }
-    }
+//     .destination {
+//         padding: 4rem 0;
+//         flex-direction: column;
+//         align-items: center;
+//         &__item:not(:last-child) {
+//             margin: 0 0 2rem 0;
+//         }
+//         &__link {
+//             font-size: 1rem;
+//             min-width: 18rem;
+//             padding: 0.790rem;
+//             line-height: 1.220em;
+//         }
+//     }
 
-    .result {display: block;}
+//     .result {display: block;}
 
-    .desc {
-        display: none;
-        &--active {
-            display: block;
-        }
-    }
+//     .desc {
+//         display: none;
+//         &--active {
+//             display: block;
+//         }
+//     }
 
-    .decision {
-        padding: 6rem 0;
-        text-align: center;
-        &__title {
-            max-width: 18.1rem;
-            font-size: 1.8rem;
-            margin: 0 auto 3rem;
-        }
-        &__text {
-            margin: 0 auto;
-            max-width: 27.1rem;
-            font-size: 1.2rem;
-        }
-    }
+//     .decision {
+//         padding: 6rem 0;
+//         text-align: center;
+//         &__title {
+//             max-width: 18.1rem;
+//             font-size: 1.8rem;
+//             margin: 0 auto 3rem;
+//         }
+//         &__text {
+//             margin: 0 auto;
+//             max-width: 27.1rem;
+//             font-size: 1.2rem;
+//         }
+//     }
 
-    .product {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: minmax(auto, 16rem);
-        &__logo {
-            margin: auto;
-        }
-        &__item:first-child {
-            grid-column: 1 / 3;
-        }
-        &__text {
-            font-size: 1.1rem;
-        }
-    }
+//     .product {
+//         grid-template-columns: repeat(2, 1fr);
+//         grid-template-rows: minmax(auto, 16rem);
+//         &__logo {
+//             margin: auto;
+//         }
+//         &__item:first-child {
+//             grid-column: 1 / 3;
+//         }
+//         &__text {
+//             font-size: 1.1rem;
+//         }
+//     }
 
-    .order {
-        padding: 6rem 0;
-        &__top {
-            align-items: center;
-            flex-direction: column;
-            margin-bottom: 6rem;
-        }
-        &__bottom {
-            align-items: center;
-            flex-direction: column;
-        }
-        &__link {
-            font-size: 1.8rem;
-            margin-bottom: 3rem;
-        }
-    }
+//     .order {
+//         padding: 6rem 0;
+//         &__top {
+//             align-items: center;
+//             flex-direction: column;
+//             margin-bottom: 6rem;
+//         }
+//         &__bottom {
+//             align-items: center;
+//             flex-direction: column;
+//         }
+//         &__link {
+//             font-size: 1.8rem;
+//             margin-bottom: 3rem;
+//         }
+//     }
 
-    .footer {
-        &__top {
-            flex-direction: column;
-            margin-bottom: 4rem;
-        }
-        &__logo {
-            margin: 0 0 4rem 0;
-        }
-        &__menu {
-            flex-direction: column;
-        }
-        &__list:not(:last-child) {
-            margin: 0 0 2rem 0;
-        }
-        &__item:not(:last-child) {
-            margin: 0 0 2rem 0;
-        }
-        &__link {
-            font-size: 1.4rem;
-        }
-        &__info {
-            font-size: 0.8rem;
-        }
-    }
-}
+//     .footer {
+//         &__top {
+//             flex-direction: column;
+//             margin-bottom: 4rem;
+//         }
+//         &__logo {
+//             margin: 0 0 4rem 0;
+//         }
+//         &__menu {
+//             flex-direction: column;
+//         }
+//         &__list:not(:last-child) {
+//             margin: 0 0 2rem 0;
+//         }
+//         &__item:not(:last-child) {
+//             margin: 0 0 2rem 0;
+//         }
+//         &__link {
+//             font-size: 1.4rem;
+//         }
+//         &__info {
+//             font-size: 0.8rem;
+//         }
+//     }
+// }
