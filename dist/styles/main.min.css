@@ -888,6 +888,7 @@ select {
     margin: 0 auto;
     max-width: 27.5rem;
     text-align: center;
+    min-height: calc(100vh - 6.5rem);
   }
 
   .page__title {
@@ -910,6 +911,28 @@ select {
 
   .page__medicine {
     display: none;
+  }
+
+  .page__medicine-lines {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .page__medicine-elements {
+    display: none;
+    position: absolute;
+    top: 0.6rem;
+    right: 4.5rem;
+    z-index: 3;
+  }
+
+  .page__medicine-box {
+    display: none;
+    position: absolute;
+    top: -0.8rem;
+    right: -17rem;
+    z-index: 2;
   }
 
   .help {
