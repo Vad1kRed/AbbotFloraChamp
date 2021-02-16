@@ -1,0 +1,15 @@
+@import './common/reset.scss';
+@import './common/variables.scss';
+@import './mixins/media.scss';
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1300px;
+}
+
+@import './common/header.scss';
+@import './includes/koliks-bebi/page.scss';
+@import './includes/koliks-bebi/info.scss';
+@import './includes/koliks-bebi/product.scss';
+@import './common/footer.scss';

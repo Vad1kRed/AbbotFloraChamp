@@ -735,6 +735,10 @@ select {
   line-height: 1.7em;
 }
 
+.characteristic__item span {
+  font-weight: bold;
+}
+
 .product {
   padding: 15rem 0 20rem;
   font-family: "Georgia",sans-serif;
@@ -764,7 +768,6 @@ select {
 }
 
 .product__item {
-  min-height: 36rem;
   padding: 2rem 2rem 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;

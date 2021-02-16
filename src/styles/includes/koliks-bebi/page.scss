@@ -1,0 +1,302 @@
+.page {
+    position: relative;
+    font-family: $font-georgia;
+    &__bg {
+        position: relative;
+    }
+    &__box {
+        position: relative;
+        z-index: 5;
+        margin: 0 auto 5.5rem;
+        max-width: 50.7rem;
+    }
+    &__title {
+        max-width: 64rem;
+        margin: 0 auto 3rem;
+        position: relative;
+        z-index: 5;
+        font-family: $font-calibri;
+        color: $color-dark-blue;
+        font-weight: bold;
+        font-size: 5.5rem;
+        line-height: 1em;
+        text-align: center;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        & span {
+            color: $color-green;
+        }
+    }
+    &__desc {
+        color: $color-light-black;
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 1.405em;
+        margin-bottom: 3rem;
+    }
+    &__text {
+        color: $color-black;
+        font-size: 1.8rem;
+        line-height: 1.4em;
+        & span {
+            font-weight: bold;
+        }
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+    @include media-1024 {
+        &__bg {
+            background-image: url('../images/koliks-bebi/bacteria-mobile.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &__box {
+            max-width: 30rem;
+            margin: 0 auto 3rem;
+        }
+        &__title {
+            position: relative;
+            padding: 3rem 0 2rem;
+            font-size: 2.4rem;
+            text-align: center;
+            margin: 0;
+            max-width: 21.6rem;
+            margin: 0 auto;
+        }
+        &__desc {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+        &__text {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.box {
+    &__bacteria {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 4rem;
+        z-index: 1;
+    }
+    @include media-1024 {
+        &__bacteria {display: none;}
+        &__img {
+            position: relative;
+            top: 0;
+            left: 0;
+            margin: 0 auto;
+        }
+    }
+}
+
+.medicine {
+    &__title {
+        max-width: 78rem;
+        margin: 0 auto 1rem;
+        color: $color-dark-blue;
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 1.15em;
+        text-align: center;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        & span {
+            color: $color-green;
+        }
+    }
+    &__box {
+        position: relative;
+        padding: 23rem 0 35rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        &-box {
+            position: absolute;
+            top: 9rem;
+            left: 50%;
+            transform: translate(-50%, 0);
+            z-index: 1;
+        }
+        &-elements {
+            position: absolute;            
+            top: 17rem;
+            left: 50%;
+            transform: translate(-55%, 0);
+            z-index: 2;
+        }
+    }
+    @include media-1024 {
+        max-width: 30rem;
+        margin: 0 auto;
+        &__box {
+            flex-direction: column;
+        }
+        &__title {
+            font-size: 1.6rem;
+        }
+        &__img {
+            display: none;
+        }
+    }
+}
+
+.property {
+    position: relative;
+    z-index: 14;
+    &__item {
+        max-width: 43rem;
+        display: flex;
+        align-items: center;
+        color: $color-black;
+        font-size: 2.8rem;
+        line-height: 1.25em;
+        &:not(:last-child) {
+            margin-bottom: 4rem;
+        }
+        &::before {
+            content: url('../images/icons/dot-light-green.png');
+            margin-right: 1.5rem;
+        }
+    }
+    @include media-1024 {
+        &__item {
+            font-size: 1.1rem;
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+            &::before {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.purchase {
+    display: flex;
+    justify-content: center;
+    &__btn {
+        min-width: 26rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: $color-gold;
+        padding: 1rem 2.5rem 1rem 4rem;
+        margin-bottom: 9rem;
+    }
+    &__text {
+        font-family: $font-calibri;
+        color: $color-white;
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 1.6em;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        margin-right: 2.5rem;
+    }
+    &__img {
+        width: 22px;
+        position: relative;
+        transform: translate(0, 25%);
+    }
+}
+
+.description {
+    margin: 0 auto 15rem;
+    max-width: 109.5rem;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    &__item {
+        padding: 0.5rem 3.5rem;
+        font-family: $font-calibri;
+        color: rgba($color: $color-black, $alpha: 0.5);
+        font-weight: bold;
+        font-size: 2.3rem;
+        line-height: 1.215em;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        border: 1px solid rgba($color: $color-black, $alpha: 0.5);
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+        &--fs-medium {
+            font-size: 1.5rem;
+            line-height: 1.2em;
+        }
+        &--active {
+            color: $color-white;
+            background-color: $color-gold;
+            border-color: $color-gold;
+        }
+    }
+}
+
+.download {
+    &__link {
+        height: 100%;
+        padding: 0.5rem 3.5rem;
+        font-family: $font-calibri;
+        color: rgba($color: $color-black, $alpha: 0.5);
+        font-weight: bold;
+        font-size: 1.3rem;
+        line-height: 1.23em;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        border: 1px solid rgba($color: $color-black, $alpha: 0.5);
+    }
+}
+
+.content {
+    &__text:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+    &__item {
+        display: none;
+        &--active {
+            display: block;
+        }
+    }
+    &__text {
+        color: $color-black;
+        font-size: 1.8rem;
+        line-height: 1.4em;
+        & span {
+            font-weight: bold;
+        }
+    }
+}
+
+.feature {
+    &__item {
+        color: $color-black;
+        font-size: 1.8rem;
+        line-height: 1.4em;
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.info {
+    font-family: $font-georgia;
+    &__title {
+        padding: 0 10px;
+        margin: 0 auto 5rem;
+        max-width: 85rem;
+        color: $color-dark-blue;
+        font-weight: bold;
+        font-size: 4.8rem;
+        line-height: 1.15em;
+        text-align: center;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+    }
+}
+
+.tablet {
+    &__img {
+        width: 100%;
+    }
+}
+
+.characteristic {
+    margin-top: 5rem;
+    &__item {
+        color: $color-black;
+        font-size: 1rem;
+        line-height: 1.7em;
+        & span {
+            font-weight: bold;
+        }
+    }
+}
