@@ -87,24 +87,27 @@
             padding: 0.6rem 2rem;
         }
         &__medicine {
-            display: none;
             &-lines {
+                min-width: 130%;
                 position: absolute;
-                bottom: 0;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 z-index: 1;
             }
             &-elements {
-                display: none;
                 position: absolute;
-                top: 0.6rem;
-                right: 4.5rem;
+                top: 50%;
+                left: 50%;
+                transform: translate(-57%, -49%);
                 z-index: 3;
             }
             &-box {
-                display: none;
+                min-width: 125%;
                 position: absolute;
-                top: -0.8rem;
-                right: -17rem;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 z-index: 2;
             }
         }

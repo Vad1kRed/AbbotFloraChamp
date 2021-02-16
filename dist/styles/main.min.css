@@ -909,29 +909,35 @@ select {
     padding: 0.6rem 2rem;
   }
 
-  .page__medicine {
-    display: none;
-  }
-
   .page__medicine-lines {
+    min-width: 130%;
     position: absolute;
-    bottom: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     z-index: 1;
   }
 
   .page__medicine-elements {
-    display: none;
     position: absolute;
-    top: 0.6rem;
-    right: 4.5rem;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-57%, -49%);
+        -ms-transform: translate(-57%, -49%);
+            transform: translate(-57%, -49%);
     z-index: 3;
   }
 
   .page__medicine-box {
-    display: none;
+    min-width: 125%;
     position: absolute;
-    top: -0.8rem;
-    right: -17rem;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     z-index: 2;
   }
 
