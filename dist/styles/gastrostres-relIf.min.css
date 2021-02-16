@@ -229,7 +229,7 @@ select {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-  background-color: #fff;
+  background-color: #000;
 }
 
 .burger__line.burger--first {
@@ -410,6 +410,7 @@ select {
 }
 
 .page {
+  position: relative;
   font-family: "Georgia",sans-serif;
 }
 
@@ -493,6 +494,7 @@ select {
 
 .medicine__box {
   position: relative;
+  padding: 7rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,8 +506,35 @@ select {
           justify-content: space-between;
 }
 
-.property:not(:last-child) {
-  margin-bottom: 2rem;
+.medicine__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.medicine__img-box {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 1;
+}
+
+.medicine__img-elements {
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+  -webkit-transform: translate(-39%, 0);
+      -ms-transform: translate(-39%, 0);
+          transform: translate(-39%, 0);
+  z-index: 2;
+}
+
+.property {
+  position: relative;
+  z-index: 14;
 }
 
 .property__item {
@@ -526,12 +555,11 @@ select {
 }
 
 .property__item::before {
-  content: url("../images/icons/dot-green.svg");
+  content: url("../images/icons/dot-green.png");
   margin-right: 1.5rem;
 }
 
 .purchase {
-  margin: 3rem auto 9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -553,6 +581,7 @@ select {
           justify-content: flex-end;
   background-color: #EEB33B;
   padding: 1rem 2.5rem 1rem 4rem;
+  margin-bottom: 9rem;
 }
 
 .purchase__text {
@@ -735,6 +764,7 @@ select {
 }
 
 .product__item {
+  min-height: 36rem;
   padding: 2rem 2rem 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -830,39 +860,76 @@ select {
     overflow: hidden;
   }
 
-  .footer__top {
-    -webkit-box-orient: vertical;
+  .header {
+    padding: 1rem 0 1rem;
+  }
+
+  .header__body {
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 4rem;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
-  .footer__logo {
-    margin: 0 0 4rem 0;
+  .header__top {
+    margin-bottom: 0;
   }
 
-  .footer__menu {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .logo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
 
-  .footer__list:not(:last-child) {
-    margin: 0 0 2rem 0;
+  .logo__link:not(:last-child) {
+    margin-left: 1.2rem;
   }
 
-  .footer__item:not(:last-child) {
-    margin: 0 0 2rem 0;
+  .menu {
+    display: none;
   }
 
-  .footer__link {
-    font-size: 1.4rem;
+  .basket {
+    display: none;
   }
 
-  .footer__info {
-    font-size: 0.8rem;
+  .language {
+    margin-right: 1.5rem;
+  }
+
+  .language__box {
+    margin-right: 0;
+  }
+
+  .language__flag {
+    width: 1.8rem;
+  }
+
+  .language__text {
+    font-size: 1.2rem;
+  }
+
+  .language__arrow {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .blur {
+    display: block;
+  }
+
+  .mobile {
+    display: block;
   }
 
   .page__bg {
@@ -901,7 +968,6 @@ select {
   }
 
   .box__img {
-    width: 100%;
     position: relative;
     top: 0;
     left: 0;
@@ -924,6 +990,10 @@ select {
     font-size: 1.6rem;
   }
 
+  .medicine__img {
+    display: none;
+  }
+
   .property__item {
     font-size: 1.1rem;
   }
@@ -934,5 +1004,40 @@ select {
 
   .property__item::before {
     margin-right: 1rem;
+  }
+
+  .footer__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 4rem;
+  }
+
+  .footer__logo {
+    margin: 0 0 4rem 0;
+  }
+
+  .footer__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer__list:not(:last-child) {
+    margin: 0 0 2rem 0;
+  }
+
+  .footer__item:not(:last-child) {
+    margin: 0 0 2rem 0;
+  }
+
+  .footer__link {
+    font-size: 1.4rem;
+  }
+
+  .footer__info {
+    font-size: 0.8rem;
   }
 }
