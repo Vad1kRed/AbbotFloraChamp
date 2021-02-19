@@ -29,7 +29,7 @@ const browserReload = () => {
 const html = () => {
     return gulp.src(srcFolder + 'pages/*.html')
         .pipe(include({prefix: '@@'}))
-        .pipe(htmlmin({collapseWhitespace: true}))
+        // .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(distFolder))
         .pipe(browserSync.stream())
 }
@@ -55,12 +55,12 @@ const scripts = () => {
 
 const images = () => {
     return gulp.src(srcFolder + 'images/**/*')
-        .pipe(imagemin([
-            imagemin.gifsicle({interlaced: true}),
-            imagemin.mozjpeg({quality: 75, progressive: true}),
-            imagemin.optipng({optimizationLevel: 3}),
-            imagemin.svgo({plugins: [{removeViewBox: false}, {cleanupIDs: false}]})
-        ], {verbose: true}))
+        // .pipe(imagemin([
+        //     imagemin.gifsicle({interlaced: true}),
+        //     imagemin.mozjpeg({quality: 75, progressive: true}),
+        //     imagemin.optipng({optimizationLevel: 3}),
+        //     imagemin.svgo({plugins: [{removeViewBox: false}, {cleanupIDs: false}]})
+        // ], {verbose: true}))
         .pipe(gulp.dest(distFolder + 'images'))
         .pipe(browserSync.stream())
 }
