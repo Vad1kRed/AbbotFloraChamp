@@ -15,7 +15,7 @@
         <div class="header__body">
             <div class="header__top">
                 <div class="logo">
-                    <a class="logo__link" href="#">
+                    <a class="logo__link" href="/">
                         <picture>
                             <source srcset="./images/logo-flora-champ-mobile.svg" media="(max-width: 1024px)">
                             <img class="logo__img" src="./images/logo-flora-champ-white.svg" alt="">
@@ -45,8 +45,8 @@
                         </div>
                         <nav class="basket__menu">
                             <ul class="basket__list">
-                                <li class="basket__item"><a class="basket__link" href="#">Замовити в аптеці</a></li>
-                                <li class="basket__item"><a class="basket__link" href="#">Купити онлайн</a></li>
+                                <li class="basket__item"><a class="basket__link" href="https://tabletki.ua/" target="_blank">Замовити в аптеці</a></li>
+                                <li class="basket__item"><a class="basket__link" href="https://liki24.com/" target="_blank">Купити онлайн</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -78,8 +78,8 @@
                             </nav>
                             <nav class="basket-mobile">
                                 <ul class="basket-mobile__list">
-                                    <li class="basket-mobile__item"><a class="basket-mobile__link" href="#">Замовити в аптеці</a></li>
-                                    <li class="basket-mobile__item"><a class="basket-mobile__link" href="#">Купити онлайн</a></li>
+                                    <li class="basket-mobile__item"><a class="basket-mobile__link" href="https://tabletki.ua/" target="_blank">Замовити в аптеці</a></li>
+                                    <li class="basket-mobile__item"><a class="basket-mobile__link" href="https://liki24.com/" target="_blank">Купити онлайн</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -114,19 +114,26 @@
             <div class="container">
                 <div class="help__body">
                     <h2 class="help__title">Який з пробіотиків ФлораЧемп найкраще підійде саме ВАМ?</h2>
-                    <p class="help__text">Від фарамцевтичної компанії Abbott, яка понад 130 років турбується про здоров’я.</p>
+                    <p class="help__text">Від фармацевтичної компанії Abbott, яка понад 130 років турбується про здоров’я.</p>
                     <ul class="destination">
-                        <li class="destination__item"><div class="destination__link destination__link--active">Діти</div></li>
-                        <li class="destination__item"><div class="destination__link">Дорослі</div></li>
+                        <li class="destination__item"><a class="destination__link" href="#children">Діти</a></li>
+                        <li class="destination__item"><a class="destination__link" href="#adults">Дорослі</a></li>
                     </ul>
                     <div class="result">
                         <button class="result__btn">Показати результат</button>
                     </div>
-                    <div class="desc">
-                        <p class="desc__text">Допомога кишечнику при прийомі антибіотиків/стан після перенесеної діареї</p>
+                    <div class="desc children" id="children">
+                        <p class="desc__text children__text">Допомога кишечнику при прийомі антибіотиків/стан після перенесеної діареї</p>
                         <div class="desc__box">
-                            <span class="desc__word">Кольки</span>
-                            <span class="desc__brand">Флора Чемп Колікс Бебі</span>
+                            <span class="desc__word children__word">Кольки</span>
+                            <span class="desc__brand children__brand"></span>
+                        </div>
+                    </div>
+                    <div class="desc adults" id="adults">
+                        <p class="desc__text adults__text">Допомога кишечнику при прийомі антибіотиків/стан після перенесеної діареї</p>
+                        <div class="desc__box">
+                            <span class="desc__word adults__word">Кольки</span>
+                            <span class="desc__brand adults__brand"></span>
                         </div>
                     </div>
                 </div>
@@ -145,16 +152,16 @@
         <section class="product">
             <div class="product__item product__item--bg-blue">
                 <div class="product__logo">
-                    <a class="product__logo-link" href="#">
+                    <a class="product__logo-link" href="/">
                         <picture>
                             <source srcset="./images/logo-abbott-white-mobile.svg" media="(max-width: 1024px)">
-                            <img class="product__logo-img" src="./images/logo-abbott-white.svg" alt="Logo Abbott">
+                            <img class="product__logo-img" src="./images/logo-abbott-white.svg" alt="">
                         </picture>
                     </a>
-                    <a class="product__logo-link" href="#">
+                    <a class="product__logo-link" href="https://www.abbott.com/" target="_blank">
                         <picture>
                             <source srcset="./images/logo-flora-champ-white-mobile.svg" media="(max-width: 1024px)">
-                            <img class="product__logo-img" src="./images/logo-flora-champ-white.svg" alt="Logo FloraChamp">
+                            <img class="product__logo-img" src="./images/logo-flora-champ-white.svg" alt="">
                         </picture>
                     </a>
                 </div>
@@ -184,18 +191,22 @@
             <div class="container">
                 <div class="order__body">
                     <div class="order__top">
-                        <a class="order__link" href="#">Замовити в аптеці</a>
-                        <picture>
-                            <source srcset="./images/index/logo-tabletki-ua-mobile.svg" media="(max-width: 1024px)">
-                            <img class="order__img" src="./images/index/logo-tabletki-ua.svg" alt="Logo Tabletki Ua">
-                        </picture>
+                        <a class="order__text" href="https://tabletki.ua/" target="_blank">Замовити в аптеці</a>
+                        <a class="order__link" href="https://tabletki.ua/" target="_blank">
+                            <picture>
+                                <source srcset="./images/index/logo-tabletki-ua-mobile.svg" media="(max-width: 1024px)">
+                                <img class="order__img" src="./images/index/logo-tabletki-ua.svg" alt="Logo Tabletki Ua">
+                            </picture>
+                        </a>
                     </div>
                     <div class="order__bottom">
-                        <a class="order__link" href="#">Купити онлайн</a>
-                        <picture>
-                            <source srcset="./images/index/logo-liki-24-mobile.svg" media="(max-width: 1024px)">
-                            <img class="order__img" src="./images/index/logo-liki-24.svg" alt="Logo Liki24">
-                        </picture>
+                        <a class="order__text" href="https://liki24.com/" target="_blank">Купити онлайн</a>
+                        <a class="order__link" href="https://liki24.com/" target="_blank">
+                            <picture>
+                                <source srcset="./images/index/logo-liki-24-mobile.svg" media="(max-width: 1024px)">
+                                <img class="order__img" src="./images/index/logo-liki-24.svg" alt="Logo Liki24">
+                            </picture>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -207,7 +218,7 @@
         <div class="footer__body">
             <div class="footer__top">
                 <div class="footer__logo">
-                    <a class="footer__logo-link" href="#">
+                    <a class="footer__logo-link" href="https://www.abbott.com/" target="_blank">
                         <picture>
                             <source srcset="./images/logo-abbott-black-mobile.svg" media="(max-width: 1024px)">
                             <img class="footer__logo-img" src="./images/logo-abbott-black.svg" alt="Logo Abbott">
@@ -221,8 +232,8 @@
                         <li class="footer__item"><a class="footer__link" href="#">Роль додаткових інгредієнтів</a></li>
                     </ul>
                     <ul class="footer__list">
-                        <li class="footer__item"><a class="footer__link" href="#">Замовити в аптеці</a></li>
-                        <li class="footer__item"><a class="footer__link" href="#">Купити онлайн</a></li>
+                        <li class="footer__item"><a class="footer__link" href="https://tabletki.ua/" target="_blank">Замовити в аптеці</a></li>
+                        <li class="footer__item"><a class="footer__link" href="https://liki24.com/" target="_blank">Купити онлайн</a></li>
                         <li class="footer__item"><a class="footer__link" href="#">Політика персональних даних</a></li>
                         <li class="footer__item"><a class="footer__link" href="#">Інструкція з використання Online</a></li>
                     </ul>

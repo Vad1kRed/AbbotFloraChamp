@@ -12,7 +12,7 @@
         align-items: center;
         justify-content: space-between;
     }
-    &__link {
+    &__text {
         color: $color-dark-blue;
         font-weight: bold;
         font-size: 5rem;
@@ -30,7 +30,7 @@
             align-items: center;
             flex-direction: column;
         }
-        &__link {
+        &__text {
             font-size: 1.8rem;
             margin-bottom: 3rem;
         }

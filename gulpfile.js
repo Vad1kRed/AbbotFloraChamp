@@ -47,7 +47,7 @@ const styles = () => {
 const scripts = () => {
     return gulp.src(srcFolder + 'scripts/*.js')
         .pipe(babel({presets: ['@babel/env']}))
-        .pipe(terser())
+        // .pipe(terser())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(distFolder + 'scripts'))
         .pipe(browserSync.stream())

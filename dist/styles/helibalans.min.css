@@ -175,7 +175,6 @@ select {
 }
 
 .language {
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

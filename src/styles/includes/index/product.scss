@@ -1,6 +1,7 @@
 .product {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    background-color: $color-beige;
     &__item {
         position: relative;
         padding: 2rem 2rem 1.5rem;
@@ -62,6 +63,9 @@
         }
         &__text {
             font-size: 1.1rem;
+        }
+        &__item {
+            padding: 1.4rem 1.5rem 1.1rem;
         }
     }
 }

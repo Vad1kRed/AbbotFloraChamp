@@ -490,10 +490,10 @@ select {
   color: #000;
   font-size: 2rem;
   line-height: 1.15em;
+  margin-bottom: 8rem;
 }
 
 .destination {
-  padding: 8rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,6 +510,9 @@ select {
   padding: 0.7rem;
   color: rgba(0,0,0,0.5);
   min-width: 20rem;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   font-family: "Calibri",sans-serif;
   font-weight: bold;
   font-size: 1.8rem;
@@ -520,6 +523,7 @@ select {
   border: 2px solid rgba(0,0,0,0.5);
 }
 
+.destination__link:hover,
 .destination__link--active {
   color: #EEB33B;
   border-color: #EEB33B;
@@ -546,18 +550,23 @@ select {
   text-transform: uppercase;
 }
 
+.desc {
+  display: none;
+}
+
 .desc--active {
   display: block;
 }
 
 .desc__text {
+  cursor: pointer;
   max-width: 89rem;
   color: #2E3E7E;
   font-weight: bold;
   font-size: 3rem;
   line-height: 1.15em;
   text-transform: uppercase;
-  margin-bottom: 3rem;
+  margin: 8rem 0 3rem;
 }
 
 .desc__box {
@@ -573,6 +582,7 @@ select {
 }
 
 .desc__word {
+  cursor: pointer;
   color: #EEB33B;
   font-weight: bold;
   font-size: 3rem;
@@ -615,6 +625,7 @@ select {
   display: grid;
   -ms-grid-columns: (1fr)[5];
   grid-template-columns: repeat(5, 1fr);
+  background-color: #FBF9F1;
 }
 
 .product__item {
@@ -733,7 +744,7 @@ select {
           justify-content: space-between;
 }
 
-.order__link {
+.order__text {
   color: #2E3E7E;
   font-weight: bold;
   font-size: 5rem;
@@ -992,6 +1003,32 @@ select {
     display: block;
   }
 
+  .desc__text {
+    max-width: 30rem;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 4rem auto 2rem;
+  }
+
+  .desc__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .desc__word {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+  }
+
+  .desc__brand {
+    font-size: 1.2rem;
+  }
+
   .decision {
     padding: 6rem 0;
     text-align: center;
@@ -1030,6 +1067,10 @@ select {
     font-size: 1.1rem;
   }
 
+  .product__item {
+    padding: 1.4rem 1.5rem 1.1rem;
+  }
+
   .order {
     padding: 6rem 0;
   }
@@ -1055,7 +1096,7 @@ select {
             flex-direction: column;
   }
 
-  .order__link {
+  .order__text {
     font-size: 1.8rem;
     margin-bottom: 3rem;
   }

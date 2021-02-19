@@ -28,9 +28,50 @@
 //     mobileBody.classList.toggle('mobile__body--active');
 // });
 
-const resultBtn = document.querySelector('.result__btn');
-const desc = document.querySelector('.desc');
+const destinationLink = document.querySelectorAll('.destination__link');
+const desc = document.querySelectorAll('.desc');
 
-resultBtn.addEventListener('click', () => {
-    desc.classList.toggle('desc--active');
+destinationLink.forEach(item => {
+    item.addEventListener('click', function(e) {
+        e.preventDefault();
+        const id = e.target.getAttribute('href').replace('#', '');
+        destinationLink.forEach(item => {
+            item.classList.remove('destination__link--active');
+        });
+        desc.forEach(item => {
+            item.classList.remove('desc--active');
+        });
+        item.classList.add('destination__link--active');
+        document.getElementById(id).classList.add('desc--active');
+    });
 });
+
+const childrenText = document.querySelector('.children__text');
+const childrenWord = document.querySelector('.children__word');
+const childrenBrand = document.querySelector('.children__brand');
+const adultsText = document.querySelector('.adults__text');
+const adultsWord = document.querySelector('.adults__word');
+const adultsBrand = document.querySelector('.adults__brand');
+
+childrenText.addEventListener('click', () => {
+    childrenBrand.textContent = 'Дети 1';
+});
+
+childrenWord.addEventListener('click', () => {
+    childrenBrand.textContent = 'Дети 2';
+});
+
+adultsText.addEventListener('click', () => {
+    adultsBrand.textContent = 'Взрослые 1';
+});
+
+adultsWord.addEventListener('click', () => {
+    adultsBrand.textContent = 'Взрослые 2';
+});
+
+// const resultBtn = document.querySelector('.result__btn');
+// const desc = document.querySelector('.desc');
+
+// resultBtn.addEventListener('click', () => {
+//     desc.classList.toggle('desc--active');
+// });
