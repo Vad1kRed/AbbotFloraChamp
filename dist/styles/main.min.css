@@ -566,7 +566,18 @@ select {
   font-size: 3rem;
   line-height: 1.15em;
   text-transform: uppercase;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.desc__text--indent {
   margin: 8rem 0 3rem;
+}
+
+.desc__text:hover,
+.desc__text--active {
+  color: #EEB33B;
 }
 
 .desc__box {
@@ -579,15 +590,6 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.desc__word {
-  cursor: pointer;
-  color: #EEB33B;
-  font-weight: bold;
-  font-size: 3rem;
-  line-height: 1.15em;
-  text-transform: uppercase;
 }
 
 .desc__brand {
@@ -896,14 +898,14 @@ select {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: 0 auto;
-    max-width: 27.5rem;
+    max-width: 24.5rem;
     text-align: center;
-    min-height: calc(100vh - 6.5rem);
   }
 
   .page__title {
     font-size: 1.8rem;
     line-height: 1.1em;
+    margin-bottom: 26rem;
   }
 
   .page__subtitle {
@@ -995,18 +997,14 @@ select {
     display: block;
   }
 
-  .desc {
-    display: none;
-  }
-
-  .desc--active {
-    display: block;
-  }
-
   .desc__text {
     max-width: 30rem;
     font-size: 1.4rem;
     text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .desc__text--indent {
     margin: 4rem auto 2rem;
   }
 
@@ -1018,11 +1016,6 @@ select {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-
-  .desc__word {
-    font-size: 1.4rem;
-    margin-bottom: 4rem;
   }
 
   .desc__brand {
