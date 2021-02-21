@@ -21,6 +21,10 @@ body {
   min-height: 100vh;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 a {
   display: inline-block;
   text-decoration: none;
@@ -85,10 +89,4 @@ select {
   font-size: 1.8rem;
   line-height: 1.4em;
   margin-bottom: 2rem;
-}
-
-@media (max-width: 1024px) {
-  .hidden {
-    overflow: hidden;
-  }
 }

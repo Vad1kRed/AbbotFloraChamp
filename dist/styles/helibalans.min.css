@@ -21,6 +21,10 @@ body {
   min-height: 100vh;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 a {
   display: inline-block;
   text-decoration: none;
@@ -868,10 +872,6 @@ select {
 }
 
 @media (max-width: 1024px) {
-  .hidden {
-    overflow: hidden;
-  }
-
   .header {
     padding: 1rem 0 1rem;
   }

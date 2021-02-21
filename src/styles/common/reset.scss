@@ -18,10 +18,8 @@ body {
     min-height: 100vh;
 }
 
-@media (max-width: 1024px) {
-    .hidden {
-        overflow: hidden;
-    }
+.hidden {
+    overflow: hidden;
 }
 
 a {
