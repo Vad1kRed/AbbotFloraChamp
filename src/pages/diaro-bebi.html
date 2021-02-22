@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="./fonts/Georgia/font.css">
     <link rel="stylesheet" href="./fonts/Calibri/font.css">
     <link rel="stylesheet" href="./styles/diaro-bebi.min.css">
+
+    <script src="./scripts/mobile-menu.min.js" defer></script>
+    <script src="./scripts/cookie.min.js" defer></script>
+    <script src="./scripts/warning.min.js" defer></script>
+    <script src="./scripts/diaro-bebi.min.js" defer></script>
 </head>
 <body>
     @@include('./common/header.html')
     <main class="main">
-
+        @@include('./common/warning.html')
         <section class="page">
             <div class="box">
                 <img class="box__bacteria" src="./images/diaro-bebi/bacteria.png" alt="">
@@ -143,8 +148,5 @@
 
     </main>
     @@include('./common/footer.html')
-
-    <script src="./scripts/mobile-menu.min.js"></script>
-    <script src="./scripts/diaro-bebi.min.js"></script>
 </body>
 </html>

@@ -7,22 +7,17 @@
     <link rel="stylesheet" href="./fonts/Georgia/font.css">
     <link rel="stylesheet" href="./fonts/Calibri/font.css">
     <link rel="stylesheet" href="./styles/main.min.css">
+
+    <script src="./scripts/mobile-menu.min.js" defer></script>
+    <script src="./scripts/cookie.min.js" defer></script>
+    <script src="./scripts/warning.min.js" defer></script>
+    <script src="./scripts/main.min.js" defer></script>
 </head>
 <body>
 
     @@include('./includes/index/header.html')
     <main class="main">
-
-        <section class="warning">
-            <div class="container">
-                <div class="warning__body">
-                    <span class="warning__title">Попередження</span>
-                    <p class="warning__text">Вітаємо на веб-сайті florachamp.ua. Цей веб-сайт призначено виключно для користувачів з України</p>
-                    <a class="warning__btn" href="#close"><span>Я користувач з України</span></a>
-                </div>
-            </div>
-        </section>
-
+        @@include('./common/warning.html')
         <section class="page">
             <div class="container">
                 <div class="page__body">
@@ -146,9 +141,5 @@
         
     </main>
     @@include('./common/footer.html')
-
-    <script src="./scripts/mobile-menu.min.js"></script>
-    <script src="./scripts/cookie.min.js"></script>
-    <script src="./scripts/main.min.js"></script>
 </body>
 </html>

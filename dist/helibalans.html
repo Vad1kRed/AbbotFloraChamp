@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="./fonts/Georgia/font.css">
     <link rel="stylesheet" href="./fonts/Calibri/font.css">
     <link rel="stylesheet" href="./styles/helibalans.min.css">
+
+    <script src="./scripts/mobile-menu.min.js" defer></script>
+    <script src="./scripts/cookie.min.js" defer></script>
+    <script src="./scripts/warning.min.js" defer></script>
+    <script src="./scripts/helibalans.min.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -89,9 +94,16 @@
         </div>
     </div>
 </header>
-    
     <main class="main">
-
+        <section class="warning">
+    <div class="container">
+        <div class="warning__body">
+            <span class="warning__title">Попередження</span>
+            <p class="warning__text">Вітаємо на веб-сайті florachamp.ua. Цей веб-сайт призначено виключно для користувачів з України</p>
+            <a class="warning__btn" href="#close"><span>Я користувач з України</span></a>
+        </div>
+    </div>
+</section>
         <section class="page">
             <div class="box">
                 <img class="box__bacteria" src="./images/helibalans/bacteria.png" alt="">
@@ -218,7 +230,6 @@
         </section>
 
     </main>
-
     <footer class="footer">
     <div class="container">
         <div class="footer__body">
@@ -252,7 +263,5 @@
         </div>
     </div>
 </footer>
-    <script src="./scripts/mobile-menu.min.js"></script>
-    <script src="./scripts/helibalans.min.js"></script>
 </body>
 </html>

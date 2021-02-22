@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./fonts/Georgia/font.css">
     <link rel="stylesheet" href="./fonts/Calibri/font.css">
     <link rel="stylesheet" href="./styles/gastrostres-relIf.min.css">
+
+    <script src="./scripts/mobile-menu.min.js" defer></script>
+    <script src="./scripts/cookie.min.js" defer></script>
+    <script src="./scripts/warning.min.js" defer></script>
+    <script src="./scripts/gastrostres-relIf.min.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -89,7 +94,15 @@
     </div>
 </header>
     <main class="main">
-
+        <section class="warning">
+    <div class="container">
+        <div class="warning__body">
+            <span class="warning__title">Попередження</span>
+            <p class="warning__text">Вітаємо на веб-сайті florachamp.ua. Цей веб-сайт призначено виключно для користувачів з України</p>
+            <a class="warning__btn" href="#close"><span>Я користувач з України</span></a>
+        </div>
+    </div>
+</section>
         <section class="page">
             <div class="box">
                 <img class="box__bacteria" src="./images/gastrostres-relIf/bacteria.png" alt="">
@@ -257,8 +270,5 @@
         </div>
     </div>
 </footer>
-
-    <script src="./scripts/mobile-menu.min.js"></script>
-    <script src="./scripts/gastrostres-relIf.min.js"></script>
 </body>
 </html>
