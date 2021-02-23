@@ -7,9 +7,103 @@
     <link rel="stylesheet" href="./fonts/Georgia/font.css">
     <link rel="stylesheet" href="./fonts/Calibri/font.css">
     <link rel="stylesheet" href="./styles/policy.min.css">
+
+    <script src="./scripts/mobile-menu.min.js" defer></script>
+    <script src="./scripts/cookie.min.js" defer></script>
+    <script src="./scripts/warning.min.js" defer></script>
 </head>
 <body>
+    <header class="header">
+    <div class="container">
+        <div class="header__body">
+            <div class="header__top">
+                <div class="logo">
+                    <a class="logo__link" href="/">
+                        <picture>
+                            <source srcset="./images/logo-flora-champ-black-mobile.svg" media="(max-width: 1024px)">
+                            <img class="logo__img" src="./images/logo-flora-champ-black.svg" alt="">
+                        </picture>
+                    </a>
+                    <a class="logo__link" href="https://www.abbott.com/" target="_blank">
+                        <picture>
+                            <source srcset="./images/logo-abbott-color-mobile.svg" media="(max-width: 1024px)">
+                            <img class="header__logo-img" src="./images/logo-abbott-color.svg" alt="">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" href="#">Про ФлораЧемп</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Продукти</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Роль додаткових інгредієнтів</a></li>
+                    </ul>
+                </nav>
+                <div class="header__box">
+                    <div class="basket">
+                        <div class="basket__box">
+                            <img class="basket__img" src="./images/icons/basket-white.svg" alt="">
+                            <img class="basket__arrow" src="./images/icons/arrow-down-white.svg" alt="">
+                        </div>
+                        <nav class="basket__menu">
+                            <ul class="basket__list">
+                                <li class="basket__item"><a class="basket__link" href="https://tabletki.ua/" target="_blank">Замовити в аптеці</a></li>
+                                <li class="basket__item"><a class="basket__link" href="https://liki24.com/" target="_blank">Купити онлайн</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <a class="language" href="#">
+                        <div class="language__box">
+                            <img class="language__flag" src="./images/icons/flag-uk.svg" alt="Flag Ukrainian">
+                            <span class="language__text">Ua</span>
+                        </div>
+                        <img class="language__arrow" src="./images/icons/arrow-down-black.svg" alt="Arrow down">
+                    </a>
+                    <div class="burger">
+                        <span class="burger__line burger__line--first"></span>
+                        <span class="burger__line burger__line--second"></span>
+                        <span class="burger__line burger__line--third"></span>
+                        <span class="burger__line burger__line--fourth"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="blur">
+                <div class="mobile">
+                    <div class="mobile__box">
+                        <div class="mobile__body">
+                            <nav class="menu-mobile">
+                                <ul class="menu-mobile__list">
+                                    <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Про ФлораЧемп</a></li>
+                                    <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Продукти</a></li>
+                                    <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Роль додаткових інгредієнтів</a></li>
+                                </ul>
+                            </nav>
+                            <nav class="basket-mobile">
+                                <ul class="basket-mobile__list">
+                                    <li class="basket-mobile__item"><a class="basket-mobile__link" href="https://tabletki.ua/" target="_blank">Замовити в аптеці</a></li>
+                                    <li class="basket-mobile__item"><a class="basket-mobile__link" href="https://liki24.com/" target="_blank">Купити онлайн</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
     <main class="main">
+        <section class="warning">
+    <div class="container">
+        <div class="warning__body">
+            <div class="warning__box">
+                <span class="warning__title">Попередження</span>
+                <p class="warning__text">Вітаємо на веб-сайті florachamp.ua. Цей веб-сайт призначено виключно для користувачів з України</p>
+                <button class="warning__btn"><span>Я користувач з України</span></button>
+            </div>
+        </div>
+    </div>
+</section>
         <section class="policy">
             <div class="container">
                 <div class="policy__body">
@@ -60,5 +154,38 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__body">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <a class="footer__logo-link" href="https://www.abbott.com/" target="_blank">
+                        <picture>
+                            <source srcset="./images/logo-abbott-black-mobile.svg" media="(max-width: 1024px)">
+                            <img class="footer__logo-img" src="./images/logo-abbott-black.svg" alt="Logo Abbott">
+                        </picture>
+                    </a>
+                </div>
+                <nav class="footer__menu">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__link" href="#">Про ФлораЧемп</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Продукти</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Роль додаткових інгредієнтів</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__link" href="https://tabletki.ua/" target="_blank">Замовити в аптеці</a></li>
+                        <li class="footer__item"><a class="footer__link" href="https://liki24.com/" target="_blank">Купити онлайн</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Політика персональних даних</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Інструкція з використання Online</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__info">ТОВ «АББОТТ УКРАЇНА»,<br> Україна, 01010, м. Київ, вул. Московська 32/2 ,<br> тел.: +38-044-498-60-80; факс: +38-044-498-60-81.</p>
+                <p class="footer__info">Дієтична добавка. Не являється лікарським засобом.<br> Продукт не слід використовувати в якості заміни збалансованого і різноманітного харчування.<br> UKR2165382</p>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

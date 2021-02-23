@@ -1,5 +1,6 @@
 @import './common/reset.scss';
 @import './common/variables.scss';
+@import './mixins/media.scss';
 
 .container {
     margin: 0 auto;
@@ -33,4 +34,23 @@
             margin-bottom: 2rem;
         }
     }
+    @include media-1024 {
+        padding: 4rem 0 6rem;
+        &__title {
+            font-size: 2.4rem;
+            max-width: 27rem;
+            line-height: 1.2em;
+            margin: 0 auto 2rem;
+        }
+        &__text {
+            font-size: 1.2rem;
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
 }
+
+@import './common/header.scss';
+@import './common/warning.scss';
+@import './common/footer.scss';

@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="./fonts/Georgia/font.css">
     <link rel="stylesheet" href="./fonts/Calibri/font.css">
     <link rel="stylesheet" href="./styles/instruction.min.css">
+
+    <script src="./scripts/mobile-menu.min.js" defer></script>
+    <script src="./scripts/cookie.min.js" defer></script>
+    <script src="./scripts/warning.min.js" defer></script>
 </head>
 <body>
+    @@include('./common/header.html')
     <main class="main">
+        @@include('./common/warning.html')
         <section class="instruction">
             <div class="container">
                 <div class="instruction__body">
@@ -55,5 +61,6 @@
             </div>
         </section>
     </main>
+    @@include('./common/footer.html')
 </body>
 </html>
