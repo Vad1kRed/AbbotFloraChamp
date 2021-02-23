@@ -171,6 +171,9 @@
         }
     }
     @include media-1024 {
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
         &__item {
             font-size: 1.1rem;
             &:not(:last-child) {

@@ -1104,6 +1104,10 @@ select {
     display: none;
   }
 
+  .property:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
   .property__item {
     font-size: 1.1rem;
   }
