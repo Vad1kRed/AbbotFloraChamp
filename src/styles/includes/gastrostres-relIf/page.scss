@@ -187,23 +187,32 @@
 }
 
 .purchase {
-    display: flex;
-    justify-content: center;
-    &__btn {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 9rem;
+    font-family: $font-calibri;
+    &:hover,
+    &:hover > &__menu {
+        opacity: 1;
+        visibility: visible;
+        min-width: 26rem;
+    }
+    &__box {
+        cursor: pointer;
         min-width: 26rem;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         background-color: $color-gold;
         padding: 1rem 2.5rem 1rem 4rem;
-        margin-bottom: 9rem;
     }
     &__text {
-        font-family: $font-calibri;
         color: $color-white;
         font-weight: bold;
         font-size: 2.4rem;
-        line-height: 1.6em;
+        line-height: 1.5em;
         letter-spacing: 0.025em;
         text-transform: uppercase;
         margin-right: 2.5rem;
@@ -212,6 +221,26 @@
         width: 22px;
         position: relative;
         transform: translate(0, 25%);
+    }
+    &__menu {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 5.6rem;
+        left: 0;
+        z-index: 999;
+        padding: 1rem 2.1rem 2rem;
+        background-color: $color-gold;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+    &__link {
+        color: $color-white;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 1.225em;
+        text-transform: uppercase;
     }
 }
 
