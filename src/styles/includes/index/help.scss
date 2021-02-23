@@ -1,4 +1,6 @@
 .help {
+    position: relative;
+    z-index: 100;
     padding: 23.6rem 0 8rem;
     font-family: $font-georgia;
     &__title {
