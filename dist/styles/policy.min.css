@@ -500,7 +500,6 @@ select {
 }
 
 .warning__title {
-  display: inline-block;
   color: #2E3E7E;
   font-weight: bold;
   font-size: 3.6rem;

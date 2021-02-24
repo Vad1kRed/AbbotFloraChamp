@@ -464,7 +464,6 @@ select {
 }
 
 .warning__title {
-  display: inline-block;
   color: #2E3E7E;
   font-weight: bold;
   font-size: 3.6rem;
@@ -495,6 +494,145 @@ select {
   line-height: 1.62em;
   letter-spacing: 0.025em;
   text-transform: uppercase;
+}
+
+.transition {
+  font-family: "Georgia",sans-serif;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  background-color: rgba(0,0,0,0.5);
+}
+
+.transition--active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.transition__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.transition__box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 79.1rem;
+  padding: 10.8rem 1rem 8.9rem;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 60px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 60px rgba(0,0,0,0.2);
+}
+
+.transition__title {
+  color: #2E3E7E;
+  font-weight: bold;
+  font-size: 3.6rem;
+  line-height: 1.15em;
+  margin-bottom: 4rem;
+}
+
+.transition__info {
+  margin-bottom: 4rem;
+}
+
+.transition__text {
+  color: #000;
+  font-size: 1.8rem;
+  line-height: 1.45em;
+  max-width: 57.5rem;
+}
+
+.transition__text:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.transition__btn {
+  border: none;
+  cursor: pointer;
+  min-width: 20rem;
+  min-height: 5.2rem;
+}
+
+.transition__btn:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.transition__btn span {
+  font-family: "Calibri",sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 1.62em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.transition__btn--go {
+  color: #fff;
+  background-color: #EEB33B;
+}
+
+.transition__btn--return {
+  color: #EEB33B;
+  border: 2px solid #EEB33B;
+  background-color: transparent;
+}
+
+.close {
+  position: absolute;
+  top: 3.5rem;
+  right: 4rem;
+}
+
+.close__box {
+  width: 4.3rem;
+  height: 4.3rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.close__line {
+  display: block;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: #E61010;
+}
+
+.close__line--first {
+  -webkit-transform: translateY(-50%) rotate(45deg);
+      -ms-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+}
+
+.close__line--second {
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+      -ms-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
 }
 
 .page {
@@ -658,13 +796,6 @@ select {
   font-family: "Calibri",sans-serif;
 }
 
-.purchase:hover,
-.purchase:hover>.purchase__menu {
-  opacity: 1;
-  visibility: visible;
-  min-width: 26rem;
-}
-
 .purchase__box {
   cursor: pointer;
   min-width: 26rem;
@@ -708,6 +839,12 @@ select {
   z-index: 999;
   padding: 1rem 2.1rem 2rem;
   background-color: #EEB33B;
+}
+
+.purchase__menu--active {
+  opacity: 1;
+  visibility: visible;
+  min-width: 26rem;
 }
 
 .purchase__item:not(:last-child) {
@@ -1071,6 +1208,63 @@ select {
 
   .warning__btn span {
     font-size: 1.6rem;
+  }
+
+  .transition__box {
+    padding: 5.6rem 1rem 3.3rem;
+  }
+
+  .transition__title {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    max-width: 20.5rem;
+  }
+
+  .transition__info {
+    margin-bottom: 3rem;
+  }
+
+  .transition__text {
+    max-width: 27.5rem;
+    font-size: 1.2rem;
+  }
+
+  .transition__text:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  .transition__act {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .transition__btn {
+    min-width: 17rem;
+    min-height: 3.8rem;
+  }
+
+  .transition__btn:not(:last-child) {
+    margin: 0 0 1rem 0;
+  }
+
+  .transition__btn span {
+    font-size: 1.6rem;
+  }
+
+  .close {
+    top: 2.1rem;
+    right: 1.8rem;
+  }
+
+  .close__box {
+    width: 2.3rem;
+    height: 2.3rem;
   }
 
   .page__bg {

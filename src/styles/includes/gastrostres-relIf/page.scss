@@ -193,12 +193,12 @@
     transform: translate(-50%, 0);
     margin-bottom: 9rem;
     font-family: $font-calibri;
-    &:hover,
-    &:hover > &__menu {
-        opacity: 1;
-        visibility: visible;
-        min-width: 26rem;
-    }
+    // &:hover,
+    // &:hover > &__menu {
+    //     opacity: 1;
+    //     visibility: visible;
+    //     min-width: 26rem;
+    // }
     &__box {
         cursor: pointer;
         min-width: 26rem;
@@ -231,6 +231,11 @@
         z-index: 999;
         padding: 1rem 2.1rem 2rem;
         background-color: $color-gold;
+        &--active {
+            opacity: 1;
+            visibility: visible;
+            min-width: 26rem;
+        }
     }
     &__item:not(:last-child) {
         margin-bottom: 1.5rem;
