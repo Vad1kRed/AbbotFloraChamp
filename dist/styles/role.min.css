@@ -21,10 +21,6 @@ body {
   min-height: 100vh;
 }
 
-.hidden {
-  overflow: hidden;
-}
-
 a {
   display: inline-block;
   text-decoration: none;
@@ -47,6 +43,16 @@ button,
 textarea,
 select {
   font-family: inherit;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1300px;
 }
 
 .container {

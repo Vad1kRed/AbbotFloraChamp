@@ -11,6 +11,7 @@
     <script src="./scripts/mobile-menu.min.js" defer></script>
     <script src="./scripts/cookie.min.js" defer></script>
     <script src="./scripts/warning.min.js" defer></script>
+    <script src="./scripts/transition.min.js" defer></script>
     <script src="./scripts/gastrostres-relIf.min.js" defer></script>
 </head>
 <body>
@@ -37,7 +38,7 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item"><a class="menu__link" href="#">Про ФлораЧемп</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Продукти</a></li>
+                        <li class="menu__item"><a class="menu__link menu__link--active" href="#">Продукти</a></li>
                         <li class="menu__item"><a class="menu__link" href="#">Роль додаткових інгредієнтів</a></li>
                     </ul>
                 </nav>
@@ -49,8 +50,8 @@
                         </div>
                         <nav class="basket__menu">
                             <ul class="basket__list">
-                                <li class="basket__item"><a class="basket__link" href="https://tabletki.ua/" target="_blank">Замовити в аптеці</a></li>
-                                <li class="basket__item"><a class="basket__link" href="https://liki24.com/" target="_blank">Купити онлайн</a></li>
+                                <li class="basket__item"><a class="basket__link buy" href="https://tabletki.ua/">Замовити в аптеці</a></li>
+                                <li class="basket__item"><a class="basket__link buy" href="https://liki24.com/">Купити онлайн</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -82,8 +83,8 @@
                             </nav>
                             <nav class="basket-mobile">
                                 <ul class="basket-mobile__list">
-                                    <li class="basket-mobile__item"><a class="basket-mobile__link" href="https://tabletki.ua/" target="_blank">Замовити в аптеці</a></li>
-                                    <li class="basket-mobile__item"><a class="basket-mobile__link" href="https://liki24.com/" target="_blank">Купити онлайн</a></li>
+                                    <li class="basket-mobile__item"><a class="basket-mobile__link buy" href="https://tabletki.ua/">Замовити в аптеці</a></li>
+                                    <li class="basket-mobile__item"><a class="basket-mobile__link buy" href="https://liki24.com/">Купити онлайн</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -121,7 +122,7 @@
                     <p class="transition__text">Чи хочете Ви продовжити і перейти на цей сайт?</p>
                 </div>
                 <div class="transition__act">
-                    <button class="transition__btn transition__btn--go"><span>Перейти</span></button>
+                    <a class="transition__btn transition__btn--go" href="#"><span>Перейти</span></a>
                     <button class="transition__btn transition__btn--return"><span>Повернутися</span></button>
                 </div>
             </div>
@@ -166,8 +167,8 @@
                             </div>
                             <nav class="purchase__menu">
                                 <ul class="purchase__list">
-                                    <li class="purchase__item"><a class="purchase__link" href="https://tabletki.ua/" target="_blank">Замовити в аптеці</a></li>
-                                    <li class="purchase__item"><a class="purchase__link" href="https://liki24.com/" target="_blank">Купити онлайн</a></li>
+                                    <li class="purchase__item"><a class="purchase__link buy" href="https://tabletki.ua/">Замовити в аптеці</a></li>
+                                    <li class="purchase__item"><a class="purchase__link buy" href="https://liki24.com/">Купити онлайн</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -287,8 +288,8 @@
                         <li class="footer__item"><a class="footer__link" href="#">Роль додаткових інгредієнтів</a></li>
                     </ul>
                     <ul class="footer__list">
-                        <li class="footer__item"><a class="footer__link" href="https://tabletki.ua/" target="_blank">Замовити в аптеці</a></li>
-                        <li class="footer__item"><a class="footer__link" href="https://liki24.com/" target="_blank">Купити онлайн</a></li>
+                        <li class="footer__item"><a class="footer__link buy" href="https://tabletki.ua/">Замовити в аптеці</a></li>
+                        <li class="footer__item"><a class="footer__link buy" href="https://liki24.com/">Купити онлайн</a></li>
                         <li class="footer__item"><a class="footer__link" href="#">Політика персональних даних</a></li>
                         <li class="footer__item"><a class="footer__link" href="#">Інструкція з використання Online</a></li>
                     </ul>

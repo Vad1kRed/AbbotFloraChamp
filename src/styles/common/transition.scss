@@ -1,9 +1,9 @@
 .transition {
     font-family: $font-georgia;
-    position: absolute;
+    position: fixed;
     z-index: 999;
-    // opacity: 0;
-    // visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
     top: 0;
     left: 0;
     width: 100%;
@@ -50,7 +50,13 @@
             margin-bottom: 2.5rem;
         }
     }
+    &__act {
+        display: flex;
+    }
     &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border: none;
         cursor: pointer;
         min-width: 20rem;
@@ -97,7 +103,6 @@
             }
         }
         &__act {
-            display: flex;
             flex-direction: column;
         }
         &__btn {

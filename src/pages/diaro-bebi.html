@@ -11,12 +11,14 @@
     <script src="./scripts/mobile-menu.min.js" defer></script>
     <script src="./scripts/cookie.min.js" defer></script>
     <script src="./scripts/warning.min.js" defer></script>
+    <script src="./scripts/transition.min.js" defer></script>
     <script src="./scripts/diaro-bebi.min.js" defer></script>
 </head>
 <body>
-    @@include('./common/header.html')
+    @@include('./includes/diaro-bebi/header.html')
     <main class="main">
         @@include('./common/warning.html')
+        @@include('./common/transition.html')
         <section class="page">
             <div class="box">
                 <img class="box__bacteria" src="./images/diaro-bebi/bacteria.png" alt="">
@@ -50,10 +52,16 @@
                             </ul>
                         </div>
                         <div class="purchase">
-                            <a class="purchase__btn" href="#">
+                            <div class="purchase__box">
                                 <span class="purchase__text">Де купити?</span>
                                 <img class="purchase__img" src="./images/icons/arrow-down-white.svg" alt="Arrow down">
-                            </a>
+                            </div>
+                            <nav class="purchase__menu">
+                                <ul class="purchase__list">
+                                    <li class="purchase__item"><a class="purchase__link buy" href="https://tabletki.ua/">Замовити в аптеці</a></li>
+                                    <li class="purchase__item"><a class="purchase__link buy" href="https://liki24.com/">Купити онлайн</a></li>
+                                </ul>
+                            </nav>
                         </div>
                         <div class="description">
                             <div class="description__tab tab">

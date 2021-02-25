@@ -21,10 +21,6 @@ body {
   min-height: 100vh;
 }
 
-.hidden {
-  overflow: hidden;
-}
-
 a {
   display: inline-block;
   text-decoration: none;
@@ -47,6 +43,10 @@ button,
 textarea,
 select {
   font-family: inherit;
+}
+
+.hidden {
+  overflow: hidden;
 }
 
 .container {
@@ -414,7 +414,7 @@ select {
 
 .warning {
   font-family: "Georgia",sans-serif;
-  position: absolute;
+  position: fixed;
   z-index: 999;
   opacity: 0;
   visibility: hidden;
@@ -498,8 +498,10 @@ select {
 
 .transition {
   font-family: "Georgia",sans-serif;
-  position: absolute;
+  position: fixed;
   z-index: 999;
+  opacity: 0;
+  visibility: hidden;
   top: 0;
   left: 0;
   width: 100%;
@@ -569,7 +571,22 @@ select {
   margin-bottom: 2.5rem;
 }
 
+.transition__act {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .transition__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: none;
   cursor: pointer;
   min-width: 20rem;
@@ -1235,9 +1252,6 @@ select {
   }
 
   .transition__act {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

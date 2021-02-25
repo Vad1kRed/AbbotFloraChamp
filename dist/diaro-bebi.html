@@ -11,6 +11,7 @@
     <script src="./scripts/mobile-menu.min.js" defer></script>
     <script src="./scripts/cookie.min.js" defer></script>
     <script src="./scripts/warning.min.js" defer></script>
+    <script src="./scripts/transition.min.js" defer></script>
     <script src="./scripts/diaro-bebi.min.js" defer></script>
 </head>
 <body>
@@ -37,7 +38,7 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item"><a class="menu__link" href="#">Про ФлораЧемп</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Продукти</a></li>
+                        <li class="menu__item"><a class="menu__link menu__link--active" href="#">Продукти</a></li>
                         <li class="menu__item"><a class="menu__link" href="#">Роль додаткових інгредієнтів</a></li>
                     </ul>
                 </nav>
@@ -49,8 +50,8 @@
                         </div>
                         <nav class="basket__menu">
                             <ul class="basket__list">
-                                <li class="basket__item"><a class="basket__link" href="https://tabletki.ua/" target="_blank">Замовити в аптеці</a></li>
-                                <li class="basket__item"><a class="basket__link" href="https://liki24.com/" target="_blank">Купити онлайн</a></li>
+                                <li class="basket__item"><a class="basket__link buy" href="https://tabletki.ua/">Замовити в аптеці</a></li>
+                                <li class="basket__item"><a class="basket__link buy" href="https://liki24.com/">Купити онлайн</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -82,8 +83,8 @@
                             </nav>
                             <nav class="basket-mobile">
                                 <ul class="basket-mobile__list">
-                                    <li class="basket-mobile__item"><a class="basket-mobile__link" href="https://tabletki.ua/" target="_blank">Замовити в аптеці</a></li>
-                                    <li class="basket-mobile__item"><a class="basket-mobile__link" href="https://liki24.com/" target="_blank">Купити онлайн</a></li>
+                                    <li class="basket-mobile__item"><a class="basket-mobile__link buy" href="https://tabletki.ua/">Замовити в аптеці</a></li>
+                                    <li class="basket-mobile__item"><a class="basket-mobile__link buy" href="https://liki24.com/">Купити онлайн</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -101,6 +102,29 @@
                 <h1 class="warning__title">Попередження</h1>
                 <p class="warning__text">Вітаємо на веб-сайті florachamp.ua. Цей веб-сайт призначено виключно для користувачів з України</p>
                 <button class="warning__btn"><span>Я користувач з України</span></button>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="transition">
+    <div class="container">
+        <div class="transition__body">
+            <div class="transition__box">
+                <div class="close">
+                    <div class="close__box">
+                        <span class="close__line close__line--first"></span>
+                        <span class="close__line close__line--second"></span>
+                    </div>
+                </div>
+                <h1 class="transition__title">Перехід на сторонній сайт</h1>
+                <div class="transition__info">
+                    <p class="transition__text">Сайт, на який Ви збираєтеся перейти, не перебуває під контролем Abbott Laboratories, і Abbott Laboratories не несе відповідальності за зміст цього сайту або будь-яких додаткових посилань з цього сайту. Abbott Laboratories надає ці посилання тільки для Вашої зручності, і розміщення будь-якого посилання не означає, що Abbott Laboratories підтримує цей сайт або схвалює його зміст.</p>
+                    <p class="transition__text">Чи хочете Ви продовжити і перейти на цей сайт?</p>
+                </div>
+                <div class="transition__act">
+                    <a class="transition__btn transition__btn--go" href="#"><span>Перейти</span></a>
+                    <button class="transition__btn transition__btn--return"><span>Повернутися</span></button>
+                </div>
             </div>
         </div>
     </div>
@@ -138,10 +162,16 @@
                             </ul>
                         </div>
                         <div class="purchase">
-                            <a class="purchase__btn" href="#">
+                            <div class="purchase__box">
                                 <span class="purchase__text">Де купити?</span>
                                 <img class="purchase__img" src="./images/icons/arrow-down-white.svg" alt="Arrow down">
-                            </a>
+                            </div>
+                            <nav class="purchase__menu">
+                                <ul class="purchase__list">
+                                    <li class="purchase__item"><a class="purchase__link buy" href="https://tabletki.ua/">Замовити в аптеці</a></li>
+                                    <li class="purchase__item"><a class="purchase__link buy" href="https://liki24.com/">Купити онлайн</a></li>
+                                </ul>
+                            </nav>
                         </div>
                         <div class="description">
                             <div class="description__tab tab">
@@ -254,8 +284,8 @@
                         <li class="footer__item"><a class="footer__link" href="#">Роль додаткових інгредієнтів</a></li>
                     </ul>
                     <ul class="footer__list">
-                        <li class="footer__item"><a class="footer__link" href="https://tabletki.ua/" target="_blank">Замовити в аптеці</a></li>
-                        <li class="footer__item"><a class="footer__link" href="https://liki24.com/" target="_blank">Купити онлайн</a></li>
+                        <li class="footer__item"><a class="footer__link buy" href="https://tabletki.ua/">Замовити в аптеці</a></li>
+                        <li class="footer__item"><a class="footer__link buy" href="https://liki24.com/">Купити онлайн</a></li>
                         <li class="footer__item"><a class="footer__link" href="#">Політика персональних даних</a></li>
                         <li class="footer__item"><a class="footer__link" href="#">Інструкція з використання Online</a></li>
                     </ul>

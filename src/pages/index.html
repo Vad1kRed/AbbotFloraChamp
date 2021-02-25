@@ -11,6 +11,7 @@
     <script src="./scripts/mobile-menu.min.js" defer></script>
     <script src="./scripts/cookie.min.js" defer></script>
     <script src="./scripts/warning.min.js" defer></script>
+    <script src="./scripts/transition.min.js" defer></script>
     <script src="./scripts/main.min.js" defer></script>
 </head>
 <body>
@@ -18,6 +19,7 @@
     @@include('./includes/index/header.html')
     <main class="main">
         @@include('./common/warning.html')
+        @@include('./common/transition.html')
         <section class="page">
             <div class="container">
                 <div class="page__body">
@@ -85,7 +87,7 @@
                             <img class="product__logo-img" src="./images/logo-abbott-white.svg" alt="">
                         </picture>
                     </a>
-                    <a class="product__logo-link" href="https://www.abbott.com/" target="_blank">
+                    <a class="product__logo-link" href="https://www.abbott.com/">
                         <picture>
                             <source srcset="./images/logo-flora-champ-white-mobile.svg" media="(max-width: 1024px)">
                             <img class="product__logo-img" src="./images/logo-flora-champ-white.svg" alt="">
@@ -118,8 +120,8 @@
             <div class="container">
                 <div class="order__body">
                     <div class="order__top">
-                        <a class="order__text" href="https://tabletki.ua/" target="_blank">Замовити в аптеці</a>
-                        <a class="order__link" href="https://tabletki.ua/" target="_blank">
+                        <a class="order__text buy" href="https://tabletki.ua/">Замовити в аптеці</a>
+                        <a class="order__link buy" href="https://tabletki.ua/">
                             <picture>
                                 <source srcset="./images/index/logo-tabletki-ua-mobile.svg" media="(max-width: 1024px)">
                                 <img class="order__img" src="./images/index/logo-tabletki-ua.svg" alt="Logo Tabletki Ua">
@@ -127,8 +129,8 @@
                         </a>
                     </div>
                     <div class="order__bottom">
-                        <a class="order__text" href="https://liki24.com/" target="_blank">Купити онлайн</a>
-                        <a class="order__link" href="https://liki24.com/" target="_blank">
+                        <a class="order__text buy" href="https://liki24.com/">Купити онлайн</a>
+                        <a class="order__link buy" href="https://liki24.com/">
                             <picture>
                                 <source srcset="./images/index/logo-liki-24-mobile.svg" media="(max-width: 1024px)">
                                 <img class="order__img" src="./images/index/logo-liki-24.svg" alt="Logo Liki24">
