@@ -998,8 +998,19 @@ select {
   text-transform: uppercase;
 }
 
-.tablet__img {
+.tablet {
+  position: relative;
+}
+
+.tablet__img-main {
   width: 100%;
+}
+
+.tablet__img-text {
+  padding: 10.2rem 8rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .characteristic {

@@ -15,8 +15,18 @@
 }
 
 .tablet {
+    position: relative;
     &__img {
-        width: 100%;
+        &-main {
+            width: 100%;
+        }
+        &-text {
+            width: 100%;
+            padding: 6.5rem 8rem 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     }
 }
 
