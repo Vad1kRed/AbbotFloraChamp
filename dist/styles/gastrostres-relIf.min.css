@@ -804,6 +804,7 @@ select {
 
 .purchase {
   position: relative;
+  z-index: 99;
   display: inline-block;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
@@ -1512,7 +1513,7 @@ select {
   }
 
   .purchase {
-    margin-bottom: 8.5rem;
+    margin-bottom: 3rem;
   }
 
   .purchase__box {
