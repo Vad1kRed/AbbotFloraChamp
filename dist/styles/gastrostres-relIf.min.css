@@ -840,7 +840,7 @@ select {
 }
 
 .purchase__img {
-  width: 22px;
+  width: 2.2rem;
   position: relative;
   -webkit-transform: translate(0, 25%);
       -ms-transform: translate(0, 25%);
@@ -879,6 +879,12 @@ select {
 .description {
   margin: 0 auto 15rem;
   max-width: 109.5rem;
+}
+
+.description-mobile {
+  display: none;
+  max-width: 30rem;
+  margin: 0 auto 6rem;
 }
 
 .tab {
@@ -925,6 +931,70 @@ select {
   border-color: #EEB33B;
 }
 
+.tab-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tab-mobile__item {
+  position: relative;
+  min-width: 23.1rem;
+  min-height: 3.8rem;
+  padding: 0.5rem 2rem;
+  margin-bottom: 1rem;
+  font-family: "Calibri",sans-serif;
+  color: rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.215em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.5);
+}
+
+.tab-mobile__item::after {
+  content: url("../images/icons/arrow-down-gray.svg");
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.tab-mobile__item--fs-medium {
+  font-size: 1.4rem;
+  line-height: 1em;
+  padding: 0.3rem 2rem;
+  max-width: 10rem;
+  display: inline-block;
+}
+
+.tab-mobile__item--active {
+  color: #fff;
+  background-color: #EEB33B;
+  border-color: #EEB33B;
+}
+
+.tab-mobile__item--active::after {
+  content: url("../images/icons/arrow-up-white.svg");
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
 .download__link {
   height: 100%;
   padding: 0.5rem 3.5rem;
@@ -943,6 +1013,26 @@ select {
   letter-spacing: 0.025em;
   text-transform: uppercase;
   border: 1px solid rgba(0,0,0,0.5);
+}
+
+.download-mobile__link {
+  min-width: 23.1rem;
+  min-height: 3.8rem;
+  padding: 0.3rem 1.3rem;
+  font-family: "Calibri",sans-serif;
+  color: rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.5);
+}
+
+.download-mobile__link span {
+  max-width: 20rem;
+  display: inline-block;
 }
 
 .content__text:not(:last-child) {
@@ -965,6 +1055,14 @@ select {
 
 .content__text span {
   font-weight: bold;
+}
+
+.content-mobile__item {
+  display: none;
+}
+
+.content-mobile__item--active {
+  display: block;
 }
 
 .feature__item {
@@ -1008,6 +1106,36 @@ select {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.composition {
+  display: none;
+  color: #000;
+  font-family: "Georgia",sans-serif;
+  max-width: 27.5rem;
+  margin: 3rem auto 0;
+}
+
+.composition__item:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.composition__img {
+  margin: 0 auto 2rem;
+}
+
+.composition__title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.2em;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.composition__desc {
+  font-size: 1rem;
+  line-height: 1.2em;
+  text-align: center;
 }
 
 .characteristic {
@@ -1089,7 +1217,7 @@ select {
   color: #fff;
   font-weight: bold;
   font-size: 1.8rem;
-  line-height: 1.92em;
+  line-height: 1.845em;
   text-align: center;
   letter-spacing: 0.025em;
   text-transform: uppercase;
@@ -1340,11 +1468,16 @@ select {
     margin: 0 auto;
   }
 
+  .medicine__title {
+    margin-bottom: 2rem;
+  }
+
   .medicine__box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0 0 3rem 0;
   }
 
   .medicine__title {
@@ -1352,11 +1485,16 @@ select {
   }
 
   .medicine__img {
-    display: none;
+    position: relative;
+  }
+
+  .medicine__img-box {
+    position: relative;
+    min-width: 180%;
   }
 
   .property:not(:last-child) {
-    margin-bottom: 2rem;
+    margin: 3rem 0 2rem 0;
   }
 
   .property__item {
@@ -1368,7 +1506,119 @@ select {
   }
 
   .property__item::before {
+    content: url("../images/icons/dot-green-mobile.png");
+    max-height: 2.2rem;
     margin-right: 1rem;
+  }
+
+  .purchase {
+    margin-bottom: 8.5rem;
+  }
+
+  .purchase__box {
+    min-width: 17rem;
+    padding: 0.6rem 2rem 0.6rem 2rem;
+  }
+
+  .purchase__text {
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+  }
+
+  .purchase__img {
+    width: 1.3rem;
+  }
+
+  .purchase__menu {
+    top: 3.9rem;
+    padding: 1rem 2rem 2rem;
+  }
+
+  .purchase__menu--active {
+    min-width: 17rem;
+  }
+
+  .purchase__item:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .purchase__link {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .description-mobile {
+    display: block;
+  }
+
+  .content__text:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .content__text {
+    font-size: 1.1rem;
+  }
+
+  .content-mobile__box {
+    margin: 3rem auto;
+  }
+
+  .feature__item {
+    font-size: 1.1rem;
+  }
+
+  .feature__item:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .info__title {
+    font-size: 2rem;
+    max-width: 30rem;
+    margin: 0 auto 3rem;
+  }
+
+  .tablet__img-text {
+    width: 100%;
+    padding: 4.6rem 2rem 0 4.1rem;
+  }
+
+  .composition {
+    display: block;
+  }
+
+  .characteristic {
+    margin: 6rem auto 0;
+    max-width: 27.5rem;
+  }
+
+  .characteristic__item {
+    font-size: 0.8rem;
+    line-height: 1.7em;
+    text-align: justify;
+  }
+
+  .product {
+    padding: 6rem 0;
+  }
+
+  .product__title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .product__box {
+    gap: 0;
+  }
+
+  .product__item {
+    padding: 1.3rem 1.3rem 1rem;
+  }
+
+  .product__text {
+    font-size: 1.1rem;
   }
 
   .footer__top {

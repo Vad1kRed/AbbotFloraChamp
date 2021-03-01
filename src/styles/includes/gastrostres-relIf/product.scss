@@ -34,9 +34,25 @@
         color: $color-white;
         font-weight: bold;
         font-size: 1.8rem;
-        line-height: 1.92em;
+        line-height: 1.845em;
         text-align: center;
         letter-spacing: 0.025em;
         text-transform: uppercase;
+    }
+    @include media-1024 {
+        padding: 6rem 0;
+        &__title {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+        &__box {
+            gap: 0;
+        }
+        &__item {
+            padding: 1.3rem 1.3rem 1rem;
+        }
+        &__text {
+            font-size: 1.1rem;
+        }
     }
 }
