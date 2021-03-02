@@ -12,6 +12,13 @@
         letter-spacing: 0.025em;
         text-transform: uppercase;
     }
+    @include media-1024 {
+        &__title {
+            font-size: 2rem;
+            max-width: 23.5rem;
+            margin: 0 auto 3rem;
+        }
+    }
 }
 
 .tablet {
@@ -27,6 +34,43 @@
             left: 0;
         }
     }
+    @include media-1024 {
+        &__img {
+            &-text {
+                min-width: 100%;
+                padding: 7.3rem 22rem 0 2rem;
+            }
+        }
+    }
+}
+
+.composition {
+    display: none;
+    color: $color-black;
+    font-family: $font-georgia;
+    max-width: 27.5rem;
+    margin: 3rem auto 0;
+    &__item:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+    &__img {
+        margin: 0 auto 2rem; 
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 1.2em;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    &__desc {
+        font-size: 1rem;
+        line-height: 1.2em;
+        text-align: center;
+    }
+    @include media-1024 {
+        display: block;
+    }
 }
 
 .characteristic {
@@ -37,6 +81,15 @@
         line-height: 1.7em;
         & span {
             font-weight: bold;
+        }
+    }
+    @include media-1024 {
+        margin: 6rem auto 0;
+        max-width: 27.5rem;
+        &__item {
+            font-size: 0.8rem;
+            line-height: 1.7em;
+            text-align: justify;
         }
     }
 }
