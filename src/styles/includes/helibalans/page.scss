@@ -150,12 +150,21 @@
         margin: 0 auto;
         &__box {
             flex-direction: column;
+            padding: 0 0 3rem 0;
         }
         &__title {
             font-size: 1.6rem;
         }
         &__img {
-            display: none;
+            position: relative;
+            &-box {
+                position: relative;
+                min-width: 180%;
+            }
+            &-elements {
+                top: 2rem;
+                transform: translate(-50%, 0);
+            }
         }
     }
 }
@@ -179,12 +188,17 @@
         }
     }
     @include media-1024 {
+        &:not(:last-child) {
+            margin: 3rem 0 2rem 0;
+        }
         &__item {
             font-size: 1.1rem;
             &:not(:last-child) {
                 margin-bottom: 2rem;
             }
             &::before {
+                content: url('../images/icons/dot-blue-mobile.png');
+                max-height: 2.2rem;
                 margin-right: 1rem;
             }
         }
@@ -193,6 +207,7 @@
 
 .purchase {
     position: relative;
+    z-index: 99;
     display: inline-block;
     left: 50%;
     transform: translate(-50%, 0);
@@ -246,11 +261,50 @@
         line-height: 1.225em;
         text-transform: uppercase;
     }
+    @include media-1024 {        
+        margin-bottom: 3rem;
+        &__box {
+            min-width: 17rem;
+            padding: 0.6rem 2rem 0.6rem 2rem;
+        }
+        &__text {
+            font-size: 1.8rem;
+            margin-right: 1.5rem;
+        }
+        &__img {
+            width: 1.3rem;
+        }
+        &__menu {
+            top: 3.9rem;
+            padding: 1rem 2rem 2rem;
+            &--active {
+                min-width: 17rem;
+            }
+        }
+        &__item:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+        &__link {
+            font-size: 1.4rem;
+        }
+    }
 }
 
 .description {
     margin: 0 auto 15rem;
     max-width: 109.5rem;
+    @include media-1024 {
+        display: none;
+    }
+}
+
+.description-mobile {
+    display: none;
+    max-width: 30rem;
+    margin: 0 auto 6rem;
+    @include media-1024 {
+        display: block;
+    }
 }
 
 .tab {
@@ -285,6 +339,54 @@
     }
 }
 
+.tab-mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__item {
+        position: relative;
+        min-width: 23.1rem;
+        min-height: 3.8rem;
+        padding: 0.5rem 2rem;
+        margin-bottom: 1rem;
+        font-family: $font-calibri;
+        color: rgba($color: $color-black, $alpha: 0.5);
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 1.215em;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        text-align: center;
+        border: 1px solid rgba($color: $color-black, $alpha: 0.5);
+        &::after {
+            content: url('../images/icons/arrow-down-gray.svg');
+            position: absolute;
+            top: 50%;
+            right: 2rem;
+            transform: translate(0, -50%);
+        }
+        &--fs-medium {
+            font-size: 1.4rem;
+            line-height: 1em;
+            padding: 0.3rem 2rem;
+            max-width: 10rem;
+            display: inline-block;
+        }
+        &--active {
+            color: $color-white;
+            background-color: $color-gold;
+            border-color: $color-gold;
+            &::after {
+                content: url('../images/icons/arrow-up-white.svg');
+                position: absolute;
+                top: 50%;
+                right: 2rem;
+                transform: translate(0, -50%);
+            }
+        }
+    }
+}
+
 .download {
     &__link {
         height: 100%;
@@ -300,6 +402,27 @@
         letter-spacing: 0.025em;
         text-transform: uppercase;
         border: 1px solid rgba($color: $color-black, $alpha: 0.5);
+    }
+}
+
+.download-mobile {
+    &__link {
+        min-width: 23.1rem;
+        min-height: 3.8rem;
+        padding: 0.3rem 1.3rem;
+        font-family: $font-calibri;
+        color: rgba($color: $color-black, $alpha: 0.5);
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 1em;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        text-align: center;
+        border: 1px solid rgba($color: $color-black, $alpha: 0.5);
+        & span {
+            max-width: 20rem;
+            display: inline-block;
+        }
     }
 }
 
@@ -321,6 +444,28 @@
             font-weight: bold;
         }
     }
+    @include media-1024 {
+        &__text:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+        &__text {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.content-mobile {
+    &__item {
+        display: none;
+        &--active {
+            display: block;
+        }
+    }
+    @include media-1024 {
+        &__box {
+            margin: 3rem auto;
+        }
+    }
 }
 
 .feature {
@@ -330,6 +475,14 @@
         line-height: 1.4em;
         &:not(:last-child) {
             margin-bottom: 1.5rem;
+        }
+    }
+    @include media-1024 {
+        &__item {
+            font-size: 1.1rem;
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
         }
     }
 }

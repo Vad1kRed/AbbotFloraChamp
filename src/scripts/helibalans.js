@@ -22,3 +22,21 @@ tabItem.forEach(item => {
         document.getElementById(id).classList.add('content__item--active');
     });
 });
+
+const tabMobileItem = document.querySelectorAll('.tab-mobile__item');
+const contentMobileItem = document.querySelectorAll('.content-mobile__item');
+
+tabMobileItem.forEach(item => {
+    item.addEventListener('click', function(e) {
+        e.preventDefault();
+        const id = e.target.getAttribute('href').replace('#', '');
+        tabMobileItem.forEach(item => {
+            item.classList.remove('tab-mobile__item--active');
+        });
+        contentMobileItem.forEach(item => {
+            item.classList.remove('content-mobile__item--active');
+        });
+        item.classList.add('tab-mobile__item--active');
+        document.getElementById(id).classList.add('content-mobile__item--active');
+    });
+});
