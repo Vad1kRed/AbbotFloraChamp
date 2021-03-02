@@ -1471,6 +1471,7 @@ select {
 
   .medicine__title {
     margin-bottom: 2rem;
+    font-size: 1.6rem;
   }
 
   .medicine__box {
@@ -1479,10 +1480,6 @@ select {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0 0 3rem 0;
-  }
-
-  .medicine__title {
-    font-size: 1.6rem;
   }
 
   .medicine__img {
