@@ -122,12 +122,17 @@ select {
   color: #000;
   font-size: 2.4rem;
   line-height: 1.2em;
-  font-weight: bold;
   text-transform: uppercase;
+}
+
+.menu__link:hover {
+  color: #5DC5DF;
+  text-shadow: 0.1rem 0 0 #5DC5DF;
 }
 
 .menu__link--active {
   color: #5DC5DF;
+  text-shadow: 0.1rem 0 0 #5DC5DF;
 }
 
 .basket {
@@ -185,10 +190,14 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 2.5rem;
+}
+
+.language:hover .language__text {
+  text-shadow: 0.1rem 0 0 #000;
 }
 
 .language__box {
-  margin-right: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,10 +216,6 @@ select {
   font-size: 2.4rem;
   line-height: 1.2em;
   text-transform: uppercase;
-}
-
-.language__arrow {
-  width: 1.1rem;
 }
 
 .burger {
@@ -824,6 +829,13 @@ select {
   font-family: "Calibri",sans-serif;
 }
 
+.purchase:hover,
+.purchase:hover>.purchase__menu {
+  opacity: 1;
+  visibility: visible;
+  min-width: 26rem;
+}
+
 .purchase__box {
   cursor: pointer;
   min-width: 26rem;
@@ -837,7 +849,7 @@ select {
       -ms-flex-pack: end;
           justify-content: flex-end;
   background-color: #EEB33B;
-  padding: 1rem 2.5rem 1rem 4rem;
+  padding: 0.8rem 2.5rem 0.8rem 4rem;
 }
 
 .purchase__text {
@@ -862,17 +874,11 @@ select {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  top: 5.6rem;
+  top: 5.2rem;
   left: 0;
   z-index: 999;
-  padding: 1rem 2.1rem 2rem;
+  padding: 1.5rem 2.1rem 2.4rem;
   background-color: #EEB33B;
-}
-
-.purchase__menu--active {
-  opacity: 1;
-  visibility: visible;
-  min-width: 26rem;
 }
 
 .purchase__item:not(:last-child) {
@@ -883,7 +889,7 @@ select {
   color: #fff;
   font-weight: bold;
   font-size: 1.8rem;
-  line-height: 1.225em;
+  line-height: 1.222em;
   text-transform: uppercase;
 }
 
@@ -925,6 +931,14 @@ select {
   letter-spacing: 0.025em;
   text-transform: uppercase;
   border: 1px solid rgba(0,0,0,0.5);
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.tab__item:not(.tab__item--active):hover {
+  color: #EEB33B;
+  border-color: #EEB33B;
 }
 
 .tab__item:not(:last-child) {
@@ -1024,6 +1038,14 @@ select {
   letter-spacing: 0.025em;
   text-transform: uppercase;
   border: 1px solid rgba(0,0,0,0.5);
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.download__link:hover {
+  color: #EEB33B;
+  border-color: #EEB33B;
 }
 
 .download-mobile__link {
@@ -1270,6 +1292,17 @@ select {
   font-size: 2rem;
   line-height: 1.2em;
   text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.footer__link:hover {
+  color: #EEB33B;
+}
+
+.footer__link--active {
+  color: #EEB33B;
 }
 
 .footer__info {

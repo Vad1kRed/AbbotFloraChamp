@@ -45,7 +45,7 @@
         padding: 0.7rem;
         color: rgba($color: $color-black, $alpha: 0.5);
         min-width: 20rem;
-        transition: 0.2s;
+        transition: all 0.2s ease-out;
         font-family: $font-calibri;
         font-weight: bold;
         font-size: 1.8rem;
@@ -54,9 +54,13 @@
         letter-spacing: 0.025em;
         text-transform: uppercase;
         border: 2px solid rgba($color: $color-black, $alpha: 0.5);
-        &:hover,
-        &--active {
+        &:not(.destination__link--active):hover {
             color: $color-gold;
+            border-color: $color-gold;
+        }
+        &--active {
+            color: $color-white;
+            background-color: $color-gold;
             border-color: $color-gold;
         }
     }

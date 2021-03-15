@@ -54,8 +54,13 @@
         color: $color-white;
         font-size: 2.4rem;
         line-height: 1.2em;
-        font-weight: bold;
         text-transform: uppercase;
+        &:hover {
+            text-shadow:  0.1rem 0 0 $color-white;
+        }
+        &--active {
+            text-shadow:  0.1rem 0 0 $color-white;
+        }
     }
     @include media-1024 {
         display: none;
@@ -64,8 +69,8 @@
 
 .basket {
     position: relative;
-    min-width: 13.5rem;
     margin-right: 4rem;
+    min-width: 13.5rem;
     &:hover,
     &:hover > &__menu {
         opacity: 1;
@@ -98,6 +103,11 @@
         font-size: 1.8rem;
         line-height: 1.225em;
         text-transform: uppercase;
+        white-space: nowrap;
+        transition: all 0.2s ease-out;
+        &:hover {
+            color: $color-gold;
+        }
     }
     @include media-1024 {
         display: none;
@@ -107,8 +117,11 @@
 .language {
     display: flex;
     align-items: center;
+    margin-right: 2.5rem;
+    &:hover &__text {
+        text-shadow: 0.1rem 0 0 $color-white;
+    }
     &__box {
-        margin-right: 1.5rem;
         display: flex;
         align-items: center;
     }
@@ -117,13 +130,11 @@
         margin-right: 0.5rem;
     }
     &__text {
+        font-family: $font-calibri;
         color: $color-white;
         font-size: 2.4rem;
         line-height: 1.2em;
         text-transform: uppercase;
-    }
-    &__arrow {
-        width: 1.1rem;
     }
     @include media-1024 {
         margin-right: 1.5rem;
@@ -135,9 +146,6 @@
         }
         &__text {
             font-size: 1.2rem;
-        }
-        &__arrow {
-            display: none;
         }
     }
 }

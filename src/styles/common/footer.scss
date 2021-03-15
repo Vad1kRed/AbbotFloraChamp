@@ -23,6 +23,13 @@
         font-size: 2rem;
         line-height: 1.2em;
         text-transform: uppercase;
+        transition: all 0.2s ease-out;
+        &:hover {
+            color: $color-gold;
+        }
+        &--active {
+            color: $color-gold;
+        }
     }
     &__info {
         color: $color-light-black;

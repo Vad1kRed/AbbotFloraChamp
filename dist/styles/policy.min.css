@@ -164,12 +164,17 @@ select {
   color: #000;
   font-size: 2.4rem;
   line-height: 1.2em;
-  font-weight: bold;
   text-transform: uppercase;
+}
+
+.menu__link:hover {
+  color: #5DC5DF;
+  text-shadow: 0.1rem 0 0 #5DC5DF;
 }
 
 .menu__link--active {
   color: #5DC5DF;
+  text-shadow: 0.1rem 0 0 #5DC5DF;
 }
 
 .basket {
@@ -227,10 +232,14 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 2.5rem;
+}
+
+.language:hover .language__text {
+  text-shadow: 0.1rem 0 0 #000;
 }
 
 .language__box {
-  margin-right: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,10 +258,6 @@ select {
   font-size: 2.4rem;
   line-height: 1.2em;
   text-transform: uppercase;
-}
-
-.language__arrow {
-  width: 1.1rem;
 }
 
 .burger {
@@ -574,6 +579,17 @@ select {
   font-size: 2rem;
   line-height: 1.2em;
   text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.footer__link:hover {
+  color: #EEB33B;
+}
+
+.footer__link--active {
+  color: #EEB33B;
 }
 
 .footer__info {

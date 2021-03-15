@@ -1,10 +1,3 @@
-const purchaseBox = document.querySelector('.purchase__box');
-const purchaseMenu = document.querySelector('.purchase__menu');
-
-purchaseBox.addEventListener('click', () => {
-    purchaseMenu.classList.toggle('purchase__menu--active');
-});
-
 const tabItem = document.querySelectorAll('.tab__item');
 const contentItem = document.querySelectorAll('.content__item');
 

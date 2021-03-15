@@ -122,14 +122,21 @@ select {
   color: #fff;
   font-size: 2.4rem;
   line-height: 1.2em;
-  font-weight: bold;
   text-transform: uppercase;
+}
+
+.menu__link:hover {
+  text-shadow: 0.1rem 0 0 #fff;
+}
+
+.menu__link--active {
+  text-shadow: 0.1rem 0 0 #fff;
 }
 
 .basket {
   position: relative;
-  min-width: 13.5rem;
   margin-right: 4rem;
+  min-width: 13.5rem;
 }
 
 .basket:hover,
@@ -172,6 +179,14 @@ select {
   font-size: 1.8rem;
   line-height: 1.225em;
   text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.basket__link:hover {
+  color: #EEB33B;
 }
 
 .language {
@@ -181,10 +196,14 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 2.5rem;
+}
+
+.language:hover .language__text {
+  text-shadow: 0.1rem 0 0 #fff;
 }
 
 .language__box {
-  margin-right: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,14 +218,11 @@ select {
 }
 
 .language__text {
+  font-family: "Calibri",sans-serif;
   color: #fff;
   font-size: 2.4rem;
   line-height: 1.2em;
   text-transform: uppercase;
-}
-
-.language__arrow {
-  width: 1.1rem;
 }
 
 .burger {
@@ -683,7 +699,7 @@ select {
   padding: 1.3rem 2rem;
   min-width: 29.4rem;
   min-height: 6rem;
-  color: rgba(255,255,255,0.8);
+  color: #fff;
   font-weight: bold;
   font-size: 2.4rem;
   line-height: 1.2em;
@@ -691,7 +707,15 @@ select {
   text-align: center;
   vertical-align: center;
   text-transform: uppercase;
-  border: 2px solid rgba(255,255,255,0.8);
+  border: 2px solid #fff;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.page__btn:hover {
+  color: #5DC5DF;
+  background-color: #fff;
 }
 
 .page__medicine-lines {
@@ -756,9 +780,9 @@ select {
   padding: 0.7rem;
   color: rgba(0,0,0,0.5);
   min-width: 20rem;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   font-family: "Calibri",sans-serif;
   font-weight: bold;
   font-size: 1.8rem;
@@ -769,9 +793,14 @@ select {
   border: 2px solid rgba(0,0,0,0.5);
 }
 
-.destination__link:hover,
-.destination__link--active {
+.destination__link:not(.destination__link--active):hover {
   color: #EEB33B;
+  border-color: #EEB33B;
+}
+
+.destination__link--active {
+  color: #fff;
+  background-color: #EEB33B;
   border-color: #EEB33B;
 }
 
@@ -1036,6 +1065,17 @@ select {
   font-size: 2rem;
   line-height: 1.2em;
   text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.footer__link:hover {
+  color: #EEB33B;
+}
+
+.footer__link--active {
+  color: #EEB33B;
 }
 
 .footer__info {
@@ -1103,10 +1143,6 @@ select {
 
   .language__text {
     font-size: 1.2rem;
-  }
-
-  .language__arrow {
-    display: none;
   }
 
   .burger {
