@@ -57,7 +57,7 @@ select {
 
 .header {
   padding: 2rem 0 2.3rem;
-  font-family: "Calibri",sans-serif;
+  font-family: "Calibri", sans-serif;
   background-color: #fff;
 }
 
@@ -142,7 +142,7 @@ select {
 }
 
 .basket:hover,
-.basket:hover>.basket__menu {
+.basket:hover > .basket__menu {
   opacity: 1;
   visibility: visible;
   min-width: 25.4rem;
@@ -295,7 +295,7 @@ select {
   height: 100%;
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .blur--active {
@@ -336,7 +336,7 @@ select {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 100%;
-  font-family: "Calibri",sans-serif;
+  font-family: "Calibri", sans-serif;
 }
 
 .mobile__body {
@@ -418,7 +418,7 @@ select {
 }
 
 .warning {
-  font-family: "Georgia",sans-serif;
+  font-family: "Georgia", sans-serif;
   position: fixed;
   z-index: 999;
   opacity: 0;
@@ -429,7 +429,7 @@ select {
   min-height: 100vh;
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .warning--active {
@@ -464,8 +464,8 @@ select {
   width: 59.3rem;
   padding: 5.3rem 2.1rem 5.7rem;
   background: #fff;
-  -webkit-box-shadow: 0px 0px 60px rgba(0,0,0,0.2);
-          box-shadow: 0px 0px 60px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.2);
 }
 
 .warning__title {
@@ -492,7 +492,7 @@ select {
 }
 
 .warning__btn span {
-  font-family: "Calibri",sans-serif;
+  font-family: "Calibri", sans-serif;
   color: #fff;
   font-weight: bold;
   font-size: 2.4rem;
@@ -502,7 +502,7 @@ select {
 }
 
 .transition {
-  font-family: "Georgia",sans-serif;
+  font-family: "Georgia", sans-serif;
   position: fixed;
   z-index: 999;
   opacity: 0;
@@ -513,7 +513,7 @@ select {
   min-height: 100vh;
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .transition--active {
@@ -549,8 +549,8 @@ select {
   width: 79.1rem;
   padding: 10.8rem 1rem 8.9rem;
   background: #fff;
-  -webkit-box-shadow: 0px 0px 60px rgba(0,0,0,0.2);
-          box-shadow: 0px 0px 60px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.2);
 }
 
 .transition__title {
@@ -603,7 +603,7 @@ select {
 }
 
 .transition__btn span {
-  font-family: "Calibri",sans-serif;
+  font-family: "Calibri", sans-serif;
   font-weight: bold;
   font-size: 2.4rem;
   line-height: 1.62em;
@@ -659,7 +659,7 @@ select {
 
 .page {
   position: relative;
-  font-family: "Georgia",sans-serif;
+  font-family: "Georgia", sans-serif;
 }
 
 .page__bg {
@@ -670,15 +670,15 @@ select {
   position: relative;
   z-index: 5;
   margin: 0 auto 5.5rem;
-  max-width: 50.7rem;
+  max-width: 58.5rem;
 }
 
 .page__title {
-  max-width: 64rem;
+  max-width: 58.5rem;
   margin: 0 auto 3rem;
   position: relative;
   z-index: 5;
-  font-family: "Calibri",sans-serif;
+  font-family: "Calibri", sans-serif;
   color: #2E3E7E;
   font-weight: bold;
   font-size: 5.5rem;
@@ -689,7 +689,7 @@ select {
 }
 
 .page__title span {
-  color: #68A830;
+  color: #169793;
 }
 
 .page__desc {
@@ -710,10 +710,6 @@ select {
   font-weight: bold;
 }
 
-.page__text:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .box__bacteria {
   position: absolute;
   top: 0;
@@ -729,7 +725,7 @@ select {
 }
 
 .medicine__title {
-  max-width: 78rem;
+  max-width: 87rem;
   margin: 0 auto 1rem;
   color: #2E3E7E;
   font-weight: bold;
@@ -741,12 +737,12 @@ select {
 }
 
 .medicine__title span {
-  color: #68A830;
+  color: #169793;
 }
 
 .medicine__box {
   position: relative;
-  padding: 23rem 0 35rem;
+  padding: 7rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -766,7 +762,7 @@ select {
 
 .medicine__img-box {
   position: absolute;
-  top: 9rem;
+  top: 0;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
@@ -776,11 +772,11 @@ select {
 
 .medicine__img-elements {
   position: absolute;
-  top: 17rem;
+  top: 0.5rem;
   left: 50%;
-  -webkit-transform: translate(-55%, 0);
-      -ms-transform: translate(-55%, 0);
-          transform: translate(-55%, 0);
+  -webkit-transform: translate(-39%, 0);
+      -ms-transform: translate(-39%, 0);
+          transform: translate(-39%, 0);
   z-index: 2;
 }
 
@@ -790,7 +786,7 @@ select {
 }
 
 .property__item {
-  max-width: 43rem;
+  max-width: 345px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -807,7 +803,7 @@ select {
 }
 
 .property__item::before {
-  content: url("../images/icons/dot-light-green.png");
+  content: url("../images/icons/dot-green.png");
   margin-right: 1.5rem;
 }
 
@@ -820,11 +816,11 @@ select {
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   margin-bottom: 9rem;
-  font-family: "Calibri",sans-serif;
+  font-family: "Calibri", sans-serif;
 }
 
 .purchase:hover,
-.purchase:hover>.purchase__menu {
+.purchase:hover > .purchase__menu {
   opacity: 1;
   visibility: visible;
   min-width: 26rem;
@@ -857,7 +853,7 @@ select {
 }
 
 .purchase__img {
-  width: 22px;
+  width: 2.2rem;
   position: relative;
   -webkit-transform: translate(0, 25%);
       -ms-transform: translate(0, 25%);
@@ -868,7 +864,7 @@ select {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  top: 5.2rem;
+  top: 5.1rem;
   left: 0;
   z-index: 999;
   padding: 1.5rem 2.1rem 2.4rem;
@@ -910,8 +906,8 @@ select {
 
 .tab__item {
   padding: 0.5rem 3.5rem;
-  font-family: "Calibri",sans-serif;
-  color: rgba(0,0,0,0.5);
+  font-family: "Calibri", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
   font-size: 2.3rem;
   line-height: 1.215em;
@@ -924,7 +920,7 @@ select {
   text-align: center;
   letter-spacing: 0.025em;
   text-transform: uppercase;
-  border: 1px solid rgba(0,0,0,0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -969,15 +965,15 @@ select {
   min-height: 3.8rem;
   padding: 0.5rem 2rem;
   margin-bottom: 1rem;
-  font-family: "Calibri",sans-serif;
-  color: rgba(0,0,0,0.5);
+  font-family: "Calibri", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.215em;
   letter-spacing: 0.025em;
   text-transform: uppercase;
   text-align: center;
-  border: 1px solid rgba(0,0,0,0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .tab-mobile__item::after {
@@ -1017,8 +1013,8 @@ select {
 .download__link {
   height: 100%;
   padding: 0.5rem 3.5rem;
-  font-family: "Calibri",sans-serif;
-  color: rgba(0,0,0,0.5);
+  font-family: "Calibri", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
   font-size: 1.3rem;
   line-height: 1.23em;
@@ -1031,7 +1027,7 @@ select {
   text-align: center;
   letter-spacing: 0.025em;
   text-transform: uppercase;
-  border: 1px solid rgba(0,0,0,0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -1046,15 +1042,15 @@ select {
   min-width: 23.1rem;
   min-height: 3.8rem;
   padding: 0.3rem 1.3rem;
-  font-family: "Calibri",sans-serif;
-  color: rgba(0,0,0,0.5);
+  font-family: "Calibri", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
   font-size: 1.4rem;
   line-height: 1em;
   letter-spacing: 0.025em;
   text-transform: uppercase;
   text-align: center;
-  border: 1px solid rgba(0,0,0,0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .download-mobile__link span {
@@ -1103,13 +1099,13 @@ select {
 }
 
 .info {
-  font-family: "Georgia",sans-serif;
+  font-family: "Georgia", sans-serif;
 }
 
 .info__title {
   padding: 0 10px;
   margin: 0 auto 5rem;
-  max-width: 82rem;
+  max-width: 104rem;
   color: #2E3E7E;
   font-weight: bold;
   font-size: 4.8rem;
@@ -1128,7 +1124,8 @@ select {
 }
 
 .tablet__img-text {
-  padding: 10.2rem 8rem 0;
+  width: 100%;
+  padding: 5.5rem 8rem 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -1137,7 +1134,7 @@ select {
 .composition {
   display: none;
   color: #000;
-  font-family: "Georgia",sans-serif;
+  font-family: "Georgia", sans-serif;
   max-width: 27.5rem;
   margin: 3rem auto 0;
 }
@@ -1180,7 +1177,7 @@ select {
 
 .product {
   padding: 15rem 0 20rem;
-  font-family: "Georgia",sans-serif;
+  font-family: "Georgia", sans-serif;
 }
 
 .product__title {
@@ -1243,7 +1240,7 @@ select {
   color: #fff;
   font-weight: bold;
   font-size: 1.8rem;
-  line-height: 1.92em;
+  line-height: 1.845em;
   text-align: center;
   letter-spacing: 0.025em;
   text-transform: uppercase;
@@ -1251,7 +1248,7 @@ select {
 
 .footer {
   padding-bottom: 5.6rem;
-  font-family: "Georgia",sans-serif;
+  font-family: "Georgia", sans-serif;
 }
 
 .footer__top {
@@ -1280,7 +1277,7 @@ select {
 }
 
 .footer__link {
-  font-family: "Calibri",sans-serif;
+  font-family: "Calibri", sans-serif;
   color: #2E3E7E;
   font-size: 2rem;
   line-height: 1.2em;
@@ -1459,7 +1456,7 @@ select {
   }
 
   .page__bg {
-    background-image: url("../images/koliks-bebi/bacteria-mobile.svg");
+    background-image: url("../images/gastrostres-relIf/bacteria-mobile.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1476,7 +1473,7 @@ select {
     font-size: 2.4rem;
     text-align: center;
     margin: 0;
-    max-width: 28rem;
+    max-width: 21.6rem;
     margin: 0 auto;
   }
 
@@ -1505,20 +1502,17 @@ select {
     margin: 0 auto;
   }
 
+  .medicine__title {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+  }
+
   .medicine__box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0 0 3rem 0;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-
-  .medicine__title {
-    margin-bottom: 3rem;
-    font-size: 1.6rem;
   }
 
   .medicine__img {
@@ -1527,12 +1521,7 @@ select {
 
   .medicine__img-box {
     position: relative;
-    top: 0;
-  }
-
-  .medicine__img-elements {
-    max-width: 22.5rem;
-    top: 5rem;
+    min-width: 180%;
   }
 
   .property:not(:last-child) {
@@ -1548,7 +1537,7 @@ select {
   }
 
   .property__item::before {
-    content: url("../images/icons/dot-light-green-mobile.png");
+    content: url("../images/icons/dot-green-mobile.png");
     max-height: 2.2rem;
     margin-right: 1rem;
   }
@@ -1618,13 +1607,13 @@ select {
 
   .info__title {
     font-size: 2rem;
-    max-width: 23.5rem;
+    max-width: 30rem;
     margin: 0 auto 3rem;
   }
 
   .tablet__img-text {
-    min-width: 100%;
-    padding: 7.3rem 22rem 0 2rem;
+    width: 100%;
+    padding: 4.6rem 2rem 0 4.1rem;
   }
 
   .composition {

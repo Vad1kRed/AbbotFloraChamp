@@ -6,16 +6,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="./fonts/Georgia/font.css">
     <link rel="stylesheet" href="./fonts/Calibri/font.css">
-    <link rel="stylesheet" href="./styles/instruction.min.css">
+    <link rel="stylesheet" href="./styles/instruction.css">
 
-    <script src="./scripts/mobile-menu.min.js" defer></script>
-    <script src="./scripts/cookie.min.js" defer></script>
-    <script src="./scripts/warning.min.js" defer></script>
+    <script src="./scripts/mobile-menu.js" defer></script>
+    <script src="./scripts/cookie.js" defer></script>
+    <script src="./scripts/warning.js" defer></script>
+    <script src="./scripts/transition.js" defer></script>
 </head>
 <body>
-    @@include('./common/header.html')
+    @@include('./includes/instruction/header.html')
     <main class="main">
         @@include('./common/warning.html')
+        @@include('./common/transition.html')
         <section class="instruction">
             <div class="container">
                 <div class="instruction__body">
@@ -61,6 +63,6 @@
             </div>
         </section>
     </main>
-    @@include('./common/footer.html')
+    @@include('./includes/instruction/footer.html')
 </body>
 </html>

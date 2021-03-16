@@ -36,10 +36,10 @@ const html = () => {
 
 const styles = () => {
     return gulp.src(srcFolder + 'styles/*.+(css|scss)')
-        .pipe(scss({outputStyle: 'compressed'}))
+        .pipe(scss({outputStyle: 'expanded'}))
         .pipe(gcmq())
         .pipe(autoprefixer({overrideBrowserslist: ['last 10 versions'], grid: true}))
-        .pipe(rename({suffix: '.min'}))
+        // .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(distFolder + 'styles'))
         .pipe(browserSync.stream())
 }
@@ -48,7 +48,7 @@ const scripts = () => {
     return gulp.src(srcFolder + 'scripts/*.js')
         .pipe(babel({presets: ['@babel/env']}))
         // .pipe(terser())
-        .pipe(rename({suffix: '.min'}))
+        // .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(distFolder + 'scripts'))
         .pipe(browserSync.stream())
 }

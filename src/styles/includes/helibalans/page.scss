@@ -138,7 +138,7 @@
             z-index: 1;
         }
         &-elements {
-            position: absolute;            
+            position: absolute;
             top: 4.5rem;
             left: 50%;
             transform: translate(-49%, 0);
@@ -246,7 +246,7 @@
         opacity: 0;
         visibility: hidden;
         position: absolute;
-        top: 5.2rem;
+        top: 5.1rem;
         left: 0;
         z-index: 999;
         padding: 1.5rem 2.1rem 2.4rem;
@@ -262,7 +262,7 @@
         line-height: 1.222em;
         text-transform: uppercase;
     }
-    @include media-1024 {        
+    @include media-1024 {
         margin-bottom: 3rem;
         &__box {
             min-width: 17rem;

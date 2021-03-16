@@ -43,7 +43,7 @@
             background-color: $color-white;
         }
     }
-    
+
     &__medicine {
         &-lines {
             position: absolute;
@@ -62,6 +62,32 @@
             top: -0.8rem;
             right: -17rem;
             z-index: 2;
+        }
+    }
+    @include media-1440 {
+        padding: 5.7rem 0 13.5rem;
+        &__medicine {
+            &-lines {
+                max-width: 70%;
+                position: absolute;
+                top: -1.3rem;
+                right: -5rem;
+                z-index: 1;
+            }
+            &-elements {
+                max-width: 65%;
+                position: absolute;
+                top: 0rem;
+                right: 7rem;
+                z-index: 3;
+            }
+            &-box {
+                max-width: 80%;
+                position: absolute;
+                top: -0.5rem;
+                right: -10rem;
+                z-index: 2;
+            }
         }
     }
     @include media-1024 {
