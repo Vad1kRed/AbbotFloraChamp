@@ -25,15 +25,21 @@
                 <div class="page__body">
                     <div class="page__box">
                         <div class="page__info">
-                            <h3 class="page__subtitle">Різні РОЗЛАДИ травлення — різні рішення.</h3>
+                            <h3 class="page__subtitle">Різні РОЗЛАДИ травлення — різні рішення</h3>
                             <h1 class="page__title">ФлораЧемп — чемпіон твоєї мікрофлори!</h1>
                         </div>
                         <a class="page__btn" href="#decision">Дізнатись більше</a>
                     </div>
                     <div class="page__medicine">
                         <img class="page__medicine-lines" src="./images/index/lines.png" alt="">
-                        <img class="page__medicine-box" src="./images/index/medicine.png" alt="">
-                        <img class="page__medicine-elements" src="./images/index/elements.png" alt="">
+                        <picture>
+                            <source srcset="./images/index/medicine-320.png" media="(max-width: 1024px)">
+                            <img class="page__medicine-box" src="./images/index/medicine.png" alt="">
+                        </picture>
+                        <picture>
+                            <source srcset="./images/index/elements-320.png" media="(max-width: 1024px)">
+                            <img class="page__medicine-elements" src="./images/index/elements.png" alt="">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -48,9 +54,9 @@
                         <li class="destination__item"><a class="destination__link" href="#children">Діти</a></li>
                         <li class="destination__item"><a class="destination__link" href="#adults">Дорослі</a></li>
                     </ul>
-                    <div class="result">
+                    <!-- <div class="result">
                         <button class="result__btn">Показати результат</button>
-                    </div>
+                    </div> -->
                     <div class="desc children" id="children">
                         <div class="desc__box">
                             <p class="desc__text children__text">Допомога кишечнику при прийомі антибіотиків/стан після перенесеної діареї</p>
@@ -86,7 +92,7 @@
             </div>
         </section>
 
-        <section class="product">
+        <section class="product" id="product">
             <div class="product__item product__item--bg-blue">
                 <div class="product__logo">
                     <a class="product__logo-link" href="https://www.abbott.com/">

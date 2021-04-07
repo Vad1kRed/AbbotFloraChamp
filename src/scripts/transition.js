@@ -10,15 +10,15 @@ buy.forEach(item => {
     item.addEventListener('click', function(e) {
         e.preventDefault();
         html.classList.contains('hidden') ? html.removeAttribute('class') : html.classList.add('hidden');
-        mobile.classList.contains('mobile--active') ? html.classList.add('hidden') : false; 
+        mobile.classList.contains('mobile--active') ? html.classList.add('hidden') : false;
         transition.classList.add('transition--active');
-        transitionBtnGo.href = item.href; 
+        transitionBtnGo.href = item.href;
     });
 });
 
 close.addEventListener('click', () => {
     html.classList.contains('hidden') ? html.removeAttribute('class') : html.classList.add('hidden');
-    mobile.classList.contains('mobile--active') ? html.classList.add('hidden') : false; 
+    mobile.classList.contains('mobile--active') ? html.classList.add('hidden') : false;
     transition.classList.remove('transition--active');
 });
 

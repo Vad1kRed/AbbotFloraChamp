@@ -119,26 +119,30 @@
         }
         &__medicine {
             &-lines {
-                min-width: 130%;
+                width: 41.2rem;
+                min-width: 41.2rem;
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%, -40%);
                 z-index: 1;
             }
             &-elements {
+                width: 30.8rem;
+                max-width: 30.8rem;
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-57%, -49%);
+                transform: translate(-53%, -40%);
                 z-index: 3;
             }
             &-box {
-                min-width: 125%;
+                width: 28.1rem;
+                min-width: 28.1rem;
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%, -41%);
                 z-index: 2;
             }
         }
